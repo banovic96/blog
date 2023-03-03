@@ -16,21 +16,36 @@
     </div>
 
     <div class="section-ls">
-        <div class="box-lss">
-            <div class="naslov">
-                <h1 id="ls">df</h1>
-                   <br>
-                      <h1>
-                        Ukoliko želite da vidite koliko prostora zauzima neki fajl, komanda du (Disk Usage) će Vam dati odgovor. Ipak, ova komanda će Vam pokazati zauzeće u disk blokovima po default-u. Ukoliko želite prikaz u kilobajtima ili megabajtima, dodajte -h argument prilikom kucanja. </h1>
-        </div>
-       <br>
-       
-    
+
+        <div class="naslov">
+
+             <h1 id="ls">df</h1>
+             <br>
+
+               <p>Preko komande df možemo dobiti informacije o zauzetom i slobodnom prostoru na određenom drajvu (ssd-u, hard disku, USB drajvu i sl), kao i o tome na kojoj poziciji je dati uređaj montiran u okviru strukture foldera.</p>
+
+               <br>
+
+            <div class="primer">
+
+               <p>$ df -h dev/sda1</p>
+     
             </div>
-        </div>
-    </div>
-    <div class="img">
-        <div class="img-box"><img src="./dfh.png" alt=""> <img src="./dfkom.png" alt=""></div> </div>
+
+               <p>Stavicemo opciju -h posle cega dobijamo sledeci ispis</p>
+
+               
+
+            <div class="primer">
+
+               <p>Filesystem Size Used Avail Used% Mounted on</p>
+               <p>dev/sda  511M 62M 450M 12% /boot</p>
+
+             </div>
+
+              <p>Primer izvrsavanja komande df <br>
+                (U primeru koji smo videli, UEFI particija ima umereno zauzeće od 62 Megabajta i montirana je kao boot direktorijum.)
+              </p>
 
 
 

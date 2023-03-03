@@ -16,23 +16,45 @@
     </div>
 
     <div class="section-ls">
-        <div class="box-lss">
-            <div class="naslov">
-                <h1 id="ls">du</h1>
-                   <br>
-                      <h1>
-                        Komandom df dobijate izveštaj o zauzeću diskova prikazanu u procentima ili KBs. Ukoliko želite prikaz zauzeća diska u megabajtima, kucajte df -m.
 
-                      </h1>
-        </div>
-                   <br>
-        
-               
-    
+        <div class="naslov">
+
+             <h1 id="ls">du</h1>
+             <br>
+
+               <p>Komanda du računa i prikazuje memorijsko zauzeće datoteka i direktorijuma.
+
+                Ako komandi du kao argument predamo putanju do datoteke, dobićemo prost ispis vezan (samo) za navedenu datoteku:</p>
+
+               <br>
+
+            <div class="primer">
+
+               <p>$ du vimrc</p>
+               <p>12.K vimrc</p>
+     
             </div>
-        </div>
-    </div>
-    
+
+               <p>Primer izvršavanja komande du za direktorijum koji ne sadrži poddirektorijume.
+            </p>
+
+               <br>
+
+               <p>Ako komandi kao argument predamo putanju do direktorijuma, dobićemo ispis koji sadrži: i podatke za poddirektorijume, i podatak o ukupnom zauzeću za traženi direktorijum:</p>
+<br>
+            <div class="primer">
+
+               <p>$ du -h slike</p>
+               <p>5M slike/screenshot</p>
+               <p>14M slike/pozadine</p>
+               <p>20M slike</p>
+
+             </div>
+
+              <p>Primer izvršavanja komadne du za direktorijum koji sadrži datoteke i poddirektorijume.
+                <br>
+                
+              </p>
 
 
 
