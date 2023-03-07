@@ -21,38 +21,41 @@
   </div>
 </div>
   
-    <div class="section-ls">
+<div class="section-ls">
 
-        <div class="naslov">
+   <div class="naslov">
 
-             <h1 id="ls">df</h1>
+                   <h1 id="ls">df</h1>
+
              <br>
 
-               <p>Preko komande df možemo dobiti informacije o zauzetom i slobodnom prostoru na određenom drajvu (ssd-u, hard disku, USB drajvu i sl), kao i o tome na kojoj poziciji je dati uređaj montiran u okviru strukture foldera.</p>
+      <p class="tekst">Preko komande df možemo dobiti informacije o zauzetom i slobodnom prostoru na određenom drajvu (ssd-u, hard disku, <br>
+                  USB drajvu i sl), kao i o tome na kojoj poziciji je dati uređaj montiran u okviru strukture foldera.</p>
 
                <br>
 
-            <div class="primer">
+      <p>Stavicemo opciju -h posle cega dobijamo sledeci ispis</p>
 
-               <p>$ df -h dev/sda1</p>
-     
+            <div class="primer">
+                       <p>$ df -h dev/sda1</p>
             </div>
 
-               <p>Stavicemo opciju -h posle cega dobijamo sledeci ispis</p>
+            <br>
 
-               <br>
-
+      <p>Primer izvrsavanja komande df <p>
+         
             <div class="primer">
+                        <p>Filesystem Size Used Avail Used% Mounted on</p>
+                        <p>dev/sda  511M 62M 450M 12% /boot</p>
+            </div>
+            
+      <p>(U primeru koji smo videli, UEFI particija ima umereno zauzeće od 62 Megabajta i montirana je kao boot direktorijum.) </p>
 
-               <p>Filesystem Size Used Avail Used% Mounted on</p>
-               <p>dev/sda  511M 62M 450M 12% /boot</p>
 
-             </div>
 
-              <p>Primer izvrsavanja komande df <br>
-                (U primeru koji smo videli, UEFI particija ima umereno zauzeće od 62 Megabajta i montirana je kao boot direktorijum.)
-              </p>
 
+  </div>
+</div>
 
 
 

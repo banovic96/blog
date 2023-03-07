@@ -22,83 +22,78 @@
 </div>
 
 
-    <div class="section-ls">
+<div class="section-ls">
 
-        <div class="naslov">
+    <div class="naslov">
 
-             <h1 id="ls">mv</h1>
+                      <h1 id="ls">mv</h1>
              <br>
 
-               <p>Komanda mv kao i komanda <a href="./cp.html" style="color: white">cp</a>  prima dva argumenta i moze se koristiti za:
-                 <br>
-                 <br>
+     <p class="tekst">Komanda mv kao i komanda <a href="./cp.html" style="color: white"><b>cp</b> </a>  prima dva argumenta i moze se koristiti za:
+
+              <br>
+              <br>
+
                 -premeštanje datoteke (u drugi direktorijum)
                 <br>
                 -promenu naziva datoteke (ukoliko se kao drugi argument preda naziv datoteke na istoj putanji)
                </p>
 
-               <br>
+              <br>
+
+      <p>Premestanje datoteke u poddirektorijum (pod uslovom da relativna putanja dir1 postoji). <br>
+          U suprotnom ce se samo preimenovati.</p>
 
             <div class="primer">
-
-               <p>$ mv dat1 dir1</p>
-     
+                       <p>$ mv dat1 dir1</p>
             </div>
 
-               <p>Premestanje datoteke u poddirektorijum (pod uslovom da relativna putanja dir1 postoji). <br>
-                 U suprotnom ce se samo preimenovati.</p>
 
-               <br>
-               <br>
+                   <br>
+
+      <p>Premestanje datoteke u direktorijum na istom nivou hijerarhije uz promenu naziva </p>
 
             <div class="primer">
+                        <p>$ mv ../dat1/user_2/dat3</p>
+            </div>
 
-               <p>$ mv ../dat1/user_2/dat3</p>
+                  <br>
 
-             </div>
-
-              <p>Premestanje datoteke u direktorijum na istom nivou hijerarhije uz promenu naziva. <br>
-                 Ova komanda se moze pozvati i preko apsolutnih putanja, na sledeci nacin:</p>
+      <p> Ova komanda se moze pozvati i preko apsolutnih putanja, na sledeci nacin:</p>
 
         <div class="primer">
 
-                <p>$ mv /home/user_2/dat_1 /home/user_2/dat_3</p>
+                     <p>$ mv /home/user_2/dat_1 /home/user_2/dat_3</p>
  
               </div>
-<br>
-<br>
+                                         <br>
 
-<br>
+       <p>Premestanje datoteke u direktorijum na istoj hijerarhiji uz ocuvanje naziva. </p>
 
-<div class="primer">
+              <div class="primer">
+                         <p>$ mv dat1 ../user_2/</p>
+              </div>
 
-        <p>$ mv dat1 ../user_2/</p>
+      
+           <br>
 
-      </div>
+       <p>Ova komanda se takodje moze pozvati preko apsolutnih putanja</p>
 
-      <p>Premestanje datoteke u direktorijum na istoj hijerarhiji uz ocuvanje naziva.
-        <br>
-        Ova komanda se takodje moze pozvati preko apsolutnih putanja
+              <div class="primer">
+                          <p>$ mv /home/user_1/dat_1 home/user_2/dat1</p>
+              </div>
+            <br>
 
-      </p>
 
-<div class="primer">
-
-    <p>$ mv /home/user_1/dat_1 home/user_2/dat1</p>
-
-  </div>
-<br>
-<br>
-<br>
-  <div class="primer">
-
-    <p>$ mv dat_1 novo_ime</p>
- 
-  </div>
+        <p>Preimenovanje datoteke</p>
+               <div class="primer">
+                           <p>$ mv dat_1 novo_ime</p>
+               </div>
  
  
 
-  <p>Preimenovanje datoteke</p>
+    </div>
+</div>
 
 
 

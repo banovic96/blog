@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="header">
+
+        <a href="#" class="logo"><img src="../icons/logo.svg"  width="50px" alt=""></a>
+
+           <ul class="navbar">
+
+              <li><a href="../index.html">Pocetna</a></li>
+
+           </ul>
+    </div>
+        
+  
+         <div class="section-ls">
+
+               <div class="naslov">
+
+                    <h1 id="ls">wget</h1>
+                    <br>
+
+                      <p>Ova komanda nam
+                         omogucava da preuzmemo web stranice datoteke i slike sa interneta koristeci komandnu liniju. Moze raditi u pozadini bez ometannja trenutnog procesa.
+                         Podrzava HTTP, HTTPS i FTP protokole.
+                        
+                        
+                        </p>
+
+                      <br>
+                      <p>Jednostavno preuzimanje web stranice</p>
+                   <div class="primer">
+
+                      <p>$ wget www.linuxblog.com</p>
+
+            
+                   </div>
+                   
+                   <br>
+                    <p>Da biste preuzeli celu lokaciju i sve stranice koje mozete koristiti sledecom komandom:
+
+                    </p>
+                   <div class="primer">
+
+                    <p>$ wget -r www.linuxblog.com</p>
+
+          
+                 </div>
+                 <p>Ovo ucitava stranice rekruzivno do maksimalno 5 nivoa duboko</p>
+                 
+                 <br>
+
+                 <p>Dubokih 5 nivoa možda neće biti dovoljno da se sve učini sa lokacije. Mozete da koristite prekidac -l da biste podesili broj nivoa na koje želite da idete na sledeći način:</p>
+
+                 <div class="primer">
+
+                  <p>$ wget -r -l10 www.linuxblog.com </p>
+
+        
+               </div>
+               <br>
+               <p>Ako želite beskonačnu rekurziju možete koristiti sledece:</p>
+             
+               <br>
+
+               <div class="primer">
+
+                <p>$ wget -r -l inf www.linuxblog.com/p>
+
+      
+             </div>
+            <br>
+            <p>wget je moguce pokrenuti i kao pozadinsku komandu, i da nastavite da radite dok se datoteke preuzmu. <br> 
+            Koristite sledecu komandu:
+            </p>
+
+<div class="primer">
+   <p>$ wget -b www.linuxblog.com
+
+   </p>
+</div>
+
+<br>
+<p>Da biste pokrenuli komandu wget u pozadini dok ste pregledali stranicu, koristicete sledecu komandu:
+
+</p>
+            <div class="primer">
+               <p>wget -b -m www.linuxblog.com</p>
+            </div>
+
+            <br>
+            <p>Ovo mozete pojednostaviti koristeci:</p>
+
+        
+            <div class="primer">
+               <p>wget -bm www.linuxblog.com
+
+               </p>
+            </div>
+        <div>
+     <div>
+
+              
+
+</body>
+</html>

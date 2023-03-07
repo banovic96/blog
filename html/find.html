@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="hb">
+
+        <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+           <ul class="navbar">
+
+              <li><a href="../index.html">Pocetna</a></li>
+
+           </ul>
+    </div>
+</div>
+    
+
+    
+   
+<div class="section-ls">
+
+    <div class="naslov">
+
+                <h1 id="ls">find</h1>
+
+                        <br>
+
+         <p class="tekst">Komanda find se koristi za lociranje odredjene datoteke ili vise datoteka, vršeći pretragu po odredjenim zadatim parametrima</p>
+
+                        <br>
+                        <br>
+        <p>Nakon pozivanja komande find prosledjuejmo joj paramtetre. . -type , kao i parametar -name. find . -type f -name „test.js“ . Opcija . oznacava
+            da se pretraga vrsi u trenutnom direktorijumu. -type opcija sluzi za definisanje tipa trazenog objekta,
+            d- direktorijum f-datoteka, u slučaju da je opcija izostavljena, pronalazi i datoteke i direktorijume. -name opcija sluzi <br>
+            za definisanje parametra imena objekta koji trazimo. U ovom slucaju imamo primer pretrage datoteke sa punim nazivom test.js.</p>
+
+                        <div class="primer">
+                                    <p>$ find. -type f -name "test.js"</p>
+                        </div>
+                       
+                               <br>
+        <p>Primer kada je objekat koji trazimo direktorijum(type -d)</p>
+                        <div class="primer">
+                                    <p>$ find. -type d -name "test.js"</p>
+                                   
+                         </div>
+                               
+                                        
+                                        <br>
+                                     
+                      
+
+                         
+        <p>Neprosledjivanje opcije type, znaci da cemo u pretragu uvrstiti i datoteke i direktorijume</p>
+
+                            <div class="primer">
+                                       <p>$ find. -name "test.js"</p>
+                           </div>
+                           
+                                   
+                                    <br>
+                  
+
+                        
+        <p>Kada umesto opcije name komandi prosledimo opciju -iname, znači da ćemo u rezultat komande uvrstiti sve rezultate bez obzira da li u sebi sadrže velika ili mala slova.
+
+                                    </p>
+                        <div class="primer">
+                                    <p>$ find. -type d -iname "test.js"</p>
+                        </div>
+                       
+                                
+                            
+                                <br>
+              
+
+                                <p>Pretragu mozemo vrsiti u bilo kom direktorijumu, ne samo u trenutnom. Takodje mozemo -iname opciji proslediti vrednost tako da trazimo samo datoteke sa odredjenom ekstenzijom, .conf u ovom slucaju.</p>
+                   
+                    <div class="primer">
+
+                        <p>$ find. ../../../etc -type f -iname "*.conf"</p>
+                       
+             </div>
+                   
+                            <br>
+                        
+
+                            <p>Ukoliko zelimo da pretragu ogranicimo samo na odredjeni nivo direktorijuma, odnosno da , recimo iz rezultata iskljucimo poddirektorijume, koristićemo opciju -maxdepth, u ovom slučaju 1, što će nam prikazati samo rezultate iz zadatog direktorjuma.</p>
+                    <div class="primer">
+
+                        <p>$ find. ../../../etc -maxdepth 1 -type f -iname "*.conf"</p>
+                       
+             </div>
+                   
+                            
+                            <br>
+                          
+
+
+        <p>Postoji i pretraga po opciji velicine datoteke. U ovom primeru prikazujemo datoteke cija je velicina veca od 1GB. Ovo radimo pomocu ocije -size i zadate vrednosti.</p>
+
+                    <div class="primer">
+                                <p>$ find. ../../../etc -maxdepth 1 -type f -iname "*.conf" -size +1G</p>
+                    </div>
+                   
+                            
+                            
+                            
+
+
+
+    </div>
+
+ </div>
+
+      
+
+
+</body>
+</html>

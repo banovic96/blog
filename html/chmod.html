@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="hb">
+
+        <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+           <ul class="navbar">
+
+              <li><a href="../index.html">Pocetna</a></li>
+
+           </ul>
+    </div>
+</div>
+    
+        
+  
+
+    
+    <div class="section-ls">
+
+           <div class="naslov">
+
+                <h1 id="ls">chmod</h1>
+
+                    <br>
+
+                    <p class="tekst">Komanda chmod omogucava vam da promenite dozvole za pristup fajlovima i fasciklama.
+
+                        Komanda chmod, kao i druge komande, može se izvrsiti iz komandne linije ili preko datoteke </p>
+
+                    <br>
+
+                    <p>Ovo je ispravna sintaksa kada koristite chmod naredbu:</p>
+
+                <div class="primer">
+
+                        <p>chmod [opcije] režim [, režim] file1 [file2 ...]/p>
+                        
+                </div>
+<br>
+                    <p>Sledeće su neke od uobičajenih opcija koje se koriste sa chmod-om:</p>
+
+                    <br>
+
+                    <p>
+                       <b> -f, -silent, -quiet (potiskuje većinu poruka o grešci)</b> <br>
+                       <b> -v, --verbose (daje dijagnostiku za svaku obrađenu datoteku)</b> <br>
+                       <b> -c, - promene (kao što je verbose, ali izveštava samo kada se izvrši promena)</b> <br>
+                       <b> -R, - rekurzivno (rekurzivno menja datoteke i direktorijume)</b> <br>
+                       <b> --help (prikazuje pomoć i izlazi)</b> <br>
+                       <b> - verzija (izlazi informacije o verziji i izlazi)</b>
+                    </p>
+                    <br>
+
+                    <p>Ispod je lista nekoliko numeričkih dozvola koje se mogu postaviti za korisnika, grupu i sve ostale na računaru. Pored broja je ekvivalentno čitanje / pisanje / izvršenje.</p>
+
+<br>
+<b>7, rwx, citati, pisati i izvršiti</b> <br>
+<b>6, rw-, citati i pisati</b> <br>
+<b>5, rx, citati i izvrsiti</b> <br>
+<b>4, r--, samo za citanje</b> <br>
+<b>3, -wx, pisati i izvršiti</b> <br>
+<b>2, -w-, samo pisite</b> <br>
+<b>1, --x, samo izvrsi</b> <br>
+<b>0, ---, nema </b>
+    
+    <br>
+               <br>
+
+               <p>Ako zelite da promenite dozvole datoteke 'dat1' tako da svi imaju potpuni pristup uneli bi ste</p>
+               <div class="primer">
+                <p>chmod 777 dat1/p>
+               </div>
+               <p>Prvi 7 postavlja dozvole za korisnika, drugi 7 postavlja dozvole za grupu, a treći 7 postavlja dozvole za sve ostale.</p>
+               <br>
+               <p>Ako želite biti jedini koji može pristupiti njemu, koristićete</p>
+               <div class="primer">
+                <p>chmod 700 dat1</p>
+               </div>
+               <br>
+               <p>Da biste sebi i svojim clanovima dali potpuni pristup</p>
+               <div class="primer">
+                <p>chmod 770 dat1</p>
+               </div>
+    <br>
+    <p>Ako zelite zadrzati pun pristup za sebe, ali zelite zadrzati druge ljude da menjaju datoteku, mozete koristiti:</p>
+    <div class="primer">
+        <p>chmod 755 dat1</p>
+    </div>
+    <br>
+    <p>Sledece se koriste slova s gornjih stranica kako bi se promenile dozvole "dat1" tako da vlasnik moze citati i pisati u datoteku, ali ne dozvoljava bilo kog drugog:</p>
+    <div class="primer">
+        <p>chmod u = rw dat1</p>
+    </div>
+                
+                   
+             </div>
+        </div>

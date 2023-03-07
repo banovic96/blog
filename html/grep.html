@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="header">
+
+        <a href="#" class="logo"><img src="../icons/logo.svg"  width="50px" alt=""></a>
+
+           <ul class="navbar">
+
+              <li><a href="../index.html">Pocetna</a></li>
+
+           </ul>
+    </div>
+        
+  
+         <div class="section-ls">
+
+               <div class="naslov">
+
+                    <h1 id="ls">grep</h1>
+                    <br>
+
+            <p class="tekst">Grep komanda omogucava korisnicima da slazu i filtriraju tekst. Grep se najčešće koristi za pronalaženje istih stringova u tekstu ili sadržaja u datotekama
+            Takodje se moze koristiti za obavljanje pretrage po nekom obrascu ili po regularnim izrazima. Na taj nacin mozemo jednostavno pronaci neku liniju ili tekst u datoteci.
+                      </p>
+
+                      <br>
+           <p>Primer pretrage reci 'hello' u datoteci dat1</p>
+                   <div class="primer">
+
+                      <p>$ grep "hello" dat1</p>
+            
+                   </div>
+
+                     
+
+                      <br>
+           <p>Pretraga reci 'hello' unutar celog direktorijuma</p>
+                   <div class="primer">
+
+                      <p>$ grep "hello" ./*.</p>
+
+                    </div>
+
+                   
+
+        <br>
+           <p>Ukoliko zelimo da nasa komanda ignorise velika i mala slova, odnosno da vraca sve rezultate , prosledicemo parametar -i (case insensitive). </p>
+                     <div class="primer">
+
+                        <p>$ grep -i "hello" ./* </p>
+                   </div>
+  
+                      
+            <br>
+            <p>Takodje, mozemo proslediti i opciju n koja ce nam prikazati broj linije u kojoj se nalazi trazeni string.</p>
+                      <div class="primer">
+                                  <p>grep -in "hello" ./*</p>
+                      </div>
+
+        <div>
+     <div>
+
+              
+
+</body>
+</html>

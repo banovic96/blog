@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+   <div class="header">
+      <div class="hb">
+
+      <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+         <ul class="navbar">
+
+            <li><a href="../index.html">Pocetna</a></li>
+
+         </ul>
+  </div>
+</div>
+  
+
+    <div class="section-ls">
+
+        <div class="naslov">
+
+             <h1 id="ls">diff</h1>
+             <br>
+
+               <p class="tekst">Ova komanda se koristi za prikaz razlika u datotekama uporedjivajuci red po red. Pokazuje nam koje <br>
+            redove u datoteci treba promeniti da bi datoteke bile identicne. <br>
+            <br>
+            Sintaksa komande diff: </p>
+
+            <div class="primer">
+                <p>$ diff [options] file1 file2 </p>
+            </div>
+                <br>
+
+              <div class="primer">
+               <p>$ cat file1</p> 
+               <p>dobro vece</p> 
+               <p> $ cat file2</p> 
+               <p>dobro jutro</p> 
+               <p>$ diff file1 file2</p> 
+               <p>1c1</p> 
+                <p> < dobro vece</p> 
+               <p>--</p> 
+              <p> > dobro jutro</p> 
+         
+            </div>
+            
+                
+           
+               <br>
+<br>
+
+<p>Ignorise mala i velika slova</p>
+            <div class="primer">
+
+               <p>$ diff -i file_1 file_2</p>
+               
+     
+            </div>
+<br>
+           <p>Ignorise razlike u space karakterima</p>
+            <div class="primer">
+
+               <p>$ diff -b file_1 file_2/<p>
+               
+     
+            </div>
+<br>
+            <p>Ignorise razlike u TAB karakterima</p>
+            <div class="primer">
+
+               <p>$ diff -E file_1 file_2</p>
+               
+     
+            </div>
+<br>
+            <p>Ignorise razlike u praznim linijama</p>
+            <div class="primer">
+
+               <p>$ diff -B file_1 file_2</p>
+               
+     
+            </div>
+
+    
+
+
+
+</body>
+</html>

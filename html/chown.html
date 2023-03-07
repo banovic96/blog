@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+   <div class="header">
+      <div class="hb">
+
+      <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+         <ul class="navbar">
+
+            <li><a href="../index.html">Pocetna</a></li>
+
+         </ul>
+  </div>
+</div>
+  
+    <div class="section-ls">
+
+        <div class="naslov">
+
+             <h1 id="ls">chown</h1>
+             <br>
+
+               <p class="tekst">Komanda chown omogucava promenu vlasnistva korisnika i/ili grupe nad  datotekom, direktorijumom ili simboličkom vezom. <br>
+                U Linuxu su sve datoteke povezane vlasnikom i grupom i dodeljena su im prava pristupa za vlasnika grupe, clanove datoteke i druge.
+            </p>
+
+               <br>
+
+            <div class="primer">
+
+               <p>cd /home/Hostinger </p>
+             
+
+            </div>
+<br>
+
+            <div class="primer">
+
+                <p>ls -l</p>
+              
+ 
+             </div>
+<br>
+             <div class="primer">
+
+                <p>-rw-r--r-- 1 Hostinger root 0 May 23 06:58 chownSample.txt</p>
+              
+ 
+             </div>
+ <br>             
+
+<p>Prvi -rw-r–r– deo predstavlja dopustenja datoteke za korisnika, grupu i druge. Korisnik Hostinger naznacen je kao vlasnik datoteke, dok je grupno vlasnistvo postavljeno na root.</p>
+          
+    <br>
+<p>Za promenu vlasnika datoteke osnovna sintaksa je</p>
+
+<div class="primer">
+    <p>chown user FILE(s)</p>
+</div>
+<br>
+<p>Promenicemo vlasnistvo nad chownSample.txt s Hostingera na drugog korisnika pod imenom newowner. Primer je prikazan je u nastavku:</p>
+
+<div class="primer">
+    <p>chown newowner chownSample.txt
+    </p>
+</div>
+<br>
+<p>Za potvrdu promene vlasnistva ponovno upotrebite naredbu ls -l. To će proizvesti sljedeći izlaz:</p>
+
+          <div class="primer">
+            <p>-rw-r--r-- 1 newowner root 0 May 23 06:58 chownSample.txt
+            </p>
+          </div>
+    
+<br>
+
+
+<p>Komanda chown takodje se moze koristit za promenu grupe. Osnovni format za promenu vlasnistva i grupe je sledeci</p>
+
+<div class="primer">
+    <p>chown OWNER[:group] FILE(s)
+    </p>
+</div>
+<br>
+<p>Na primer, postavite vlasnika kao newowner i grupu kao newownergroup za istu datoteku chownSample.txt ovom komandom:
+</p>
+
+<div class="primer">
+    <p>chown newowner:newownergroup chownSample.txt</p>
+</div>
+<br>
+<p>Za proveru promene koristite ls -l</p>
+
+<div class="primer">
+    <p>-rw-r--r-- 1 newowner newownergroup 0 May 23 07:00 chownSample.txt</p>
+</div>
+
+<br>
+<p>Ako samo trebate promeniti grupu, deo o vlasnistvu mozete preskociti. Na prier, potpuna komanda za promenu samo grupe u newownergroup izgledala bi ovako:
+</p>
+<div class="primer">
+    <p>chown :newownergroup chownSample.txt
+    </p>
+</div>
+
+             </div>
+
+
+
+
+        </body>
+        </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="hb">
+
+        <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+           <ul class="navbar">
+
+              <li><a href="../index.html">Pocetna</a></li>
+
+           </ul>
+    </div>
+</div>
+    
+    
+
+    <div class="section-ls">
+       
+            <div class="naslov">
+               <h1 id="ls">curl</h1>
+                
+                <br>
+                <p class="tekst">Naredba curl se koristi za preuzimanje datoteka sa interneta, ali u svom osnovnom obliku.  <br>
+                    Komanda curl se moze koristiti za prenos datoteka koristeci vise razlicitih formata ukljucujuci http, https, ftp i čak smb. <br>
+                    <br>
+                    <p>Na primer, unesite sledecu koamdu</p>
+                    <div class="primer">
+                        <p>$ curl http://linux.about.com <br>
+                            /cs/linux101/g/curl.htm
+
+                        </p>
+                    </div>
+                    <br>
+                    <p>Problem sa korišćenjem osnovnog curl-a je taj što se tekst pomera vrlo brzo i ako preuzimate datoteku kao što je ISO slika, <br>
+                         onda ne želite da ovo ide na standardni izlaz. <br>
+                         <br>
+
+                      Da biste sačuvali sadržaj datoteke, sve što treba da uradite je da navedete minus o (-o) prekidač na sledeći način:</p>
+
+                      <div class="primer">
+                        <p>$ curl -o</p>
+                      </div>
+
+                      <br>
+                      <p>Ovo se moze pojednostaviti koriscenjem</p>
+                      <div class="primer">
+                        <p>$ curl -O</p>
+                      </div>
+                      <p>Ovo će koristiti ime fajla u URL-u i učiniti mu ime datoteke na kojem je URL sačuvan. U prethodnom slučaju datoteka će se nazvati curl.htm.</p>
+
+        <br>
+
+        <p>Ako samo želite komandu da se pokrene tako da možete nastaviti sa drugim stvarima onda je prva stvar koju treba da uradite je da je pokrenete <br>
+            u nečujnom režimu, a zatim je potrebno pokrenuti kao pozadinska komanda .</p>
+            <br>
+            <p>Za pokretanje komande nečujno koristite sledeću komandu:</p>
+            <div class="primer">
+                <p>$ curl -s -O</p>
+
+            </div>
+                    
+            <br>
+            <p>Možete preuzeti sa više URL-ova pomoću jedne naredbe curl. U najjednostavnijem primeru to izgleda ovako:</p>
+
+<div class="primer">
+    <p>curl -O http://www.mysite.com/page1.html <br>
+         -O http://www.mysite.com/page2.html</p>
+</div>
+          
+                   
+         </div>
+    </div>
+    
+
+
+
+
+</body>
+</html>
