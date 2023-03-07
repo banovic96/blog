@@ -20,53 +20,49 @@
     </div>
         
   
-         <div class="section-ls">
+<div class="section-ls">
 
-               <div class="naslov">
+    <div class="naslov">
 
-                    <h1 id="ls">grep</h1>
-                    <br>
+      <h1 id="ls">grep</h1>
 
-            <p class="tekst">Grep komanda omogucava korisnicima da slazu i filtriraju tekst. Grep se najčešće koristi za pronalaženje istih stringova u tekstu ili sadržaja u datotekama
+      <br>
+
+         <p class="tekst">Grep komanda omogucava korisnicima da slazu i filtriraju tekst. Grep se najčešće koristi za pronalaženje istih stringova u tekstu ili sadržaja u datotekama
             Takodje se moze koristiti za obavljanje pretrage po nekom obrascu ili po regularnim izrazima. Na taj nacin mozemo jednostavno pronaci neku liniju ili tekst u datoteci.
-                      </p>
+         </p>
 
-                      <br>
-           <p>Primer pretrage reci 'hello' u datoteci dat1</p>
-                   <div class="primer">
+      <br>
+         <p>Primer pretrage reci 'hello' u datoteci dat1</p>
+            <div class="primer">
+                <p>$ grep "hello" dat1</p>
+            </div>
 
-                      <p>$ grep "hello" dat1</p>
-            
-                   </div>
+      <br>
 
-                     
+         <p>Pretraga reci 'hello' unutar celog direktorijuma</p>
+             <div class="primer">
+                  <p>$ grep "hello" ./*.</p>
 
-                      <br>
-           <p>Pretraga reci 'hello' unutar celog direktorijuma</p>
-                   <div class="primer">
+             </div>
 
-                      <p>$ grep "hello" ./*.</p>
+      <br>
 
-                    </div>
-
-                   
-
-        <br>
-           <p>Ukoliko zelimo da nasa komanda ignorise velika i mala slova, odnosno da vraca sve rezultate , prosledicemo parametar -i (case insensitive). </p>
-                     <div class="primer">
-
-                        <p>$ grep -i "hello" ./* </p>
-                   </div>
+         <p>Ukoliko zelimo da nasa komanda ignorise velika i mala slova, odnosno da vraca sve rezultate , prosledicemo parametar -i (case insensitive). </p>
+             <div class="primer">
+                <p>$ grep -i "hello" ./* </p>
+             </div>
   
                       
-            <br>
-            <p>Takodje, mozemo proslediti i opciju n koja ce nam prikazati broj linije u kojoj se nalazi trazeni string.</p>
-                      <div class="primer">
-                                  <p>grep -in "hello" ./*</p>
-                      </div>
+       <br>
 
-        <div>
-     <div>
+         <p>Takodje, mozemo proslediti i opciju n koja ce nam prikazati broj linije u kojoj se nalazi trazeni string.</p>
+            <div class="primer">
+               <p>grep -in "hello" ./*</p>
+            </div>
+
+   <div>
+<div>
 
               
 
