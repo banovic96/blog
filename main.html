@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="header">
+      <div class="hb">
+
+      <a href="#" class="logo"><img src="./icons/logo.svg" alt=""></a>
+
+         <ul class="navbar">
+
+            <li><a href="./index.html">Pocetna</a></li>
+
+         </ul>
+  </div>
+</div>
+  
+  
+        
+  
+         <div class="section-ls">
+
+               <div class="naslov">
+
+                    <h1 id="ls">Redirekcija i pajpovi</h1>
+                    <br>
+                    <br>
+
+                      <p class="tekst">U ovom clanku razmatramo redirekciju i pajpove. Ova tehnika omogućava korisniku da kreira prilagođene <br>
+                         komande kombinovanjem vise manjih komandi da bi postigao specificne zadatke koji se ne mogu posticci jednom Linux komandom.</p>
+
+                      <br>
+                      <p>Svaki program koji pokrecemo u komandnoj liniji ima tri toka podataka povezana sa njim, a to su:</p>
+                      <p>-standardni ulaz (stdin)</p>
+                      <p>-standardni izlaz (stout)</p>
+                      <p>-standardna greska (stderr)</p>
+                    <br>
+<br>
+                    <p class="pic"><img src="./icons/pir.png" style="width: 300px;" alt=""></p>
+                    <br>
+                    <br>
+
+                       <p>Piping i redirekcija su sredstva pomoću kojih mozemo povezati ove tokove izmedju programa i datoteka da bismo podatke usmerili <br>
+                         na zanimljive i korisne načine.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+        <h3>Preusmeravanje u datoteku</h3>
+        <br>
+        <br>
+        <p>Obicno cemo svoj izlaz dobiti na ekranu, sto je dobro u vecini vremena, mejdutim ponekad mozemo da ga sacuvamo u datoteci, <br>
+        da bi smo sacuvali kao zapis, ubacili u drugi sistem ili poslali nekom drugom. Operator veće od ( > ) ukazuje komandnoj liniji da <br>
+        zelimo da se izlaz programa sacuva u datoteci umesto da se stampa na ekranu. Hajde da vidimo primer.</p>
+            <br>
+            <div class="primer-1">
+               <p>1. $ ls </p>
+                  <p>2.  doc  doc1  doc2</p>
+                  <p>3.   $ ls > myoutput</p>
+                  <p>4. $ ls</p>
+                  <p>5. doc  doc1  doc2  myoutput</p>
+                  <p>6. $ cat myoutput</p>
+                  <p>7. $ doc</p>
+                  <p>8. $ doc1</p>
+                  <p>9. $ doc2</p>
+                  <p>10. $ myoutput</p>
+                 
+                    
+            </div>
+             <br>
+            <p><b>Red1 -</b> pocnimo tako sto cemo videti sta se nalazi u nasem trenutnom direktorijumu</p>
+            <p><b>Red2 -</b> sada ćemo pokrenuti istu komandu, ali ovog puta koristimo > da kažemo terminalu da sačuva <br>
+                izlaz u datoteku mioutput. Primetićete da ne moramo da kreiramo datoteku pre nego što je sačuvamo. <br>
+                 Terminal će ga automatski kreirati ako ne postoj</p>
+                <p><b>Red4 -</b> kao što vidite, naš novi fajl je kreiran.</p>
+                 <p> <b>Red6 -</b> hajde da pogledamo šta je tamo sačuvano.</p>
+<br>
+                <br>
+                <br>
+                <h3>Cuvanje u postojecoj datoteci</h3>
+                <br>
+                <br>
+                <p>Ako preusmerimo prema datoteci koja ne postoji, ona ce se automatski kreirati za nas. Medjutim ako sacuvamo u datoteku koja vec postoji, <br>
+                    njen sadrzaj ce biti obrisan, a zatim ce se novi izlaz sacuvati u njemu.</p>
+                    <br>
+                    <div class="primer-1">
+                        <p> $ cat myoutput </p>
+                           <p>  doc  </p>
+                           <p>   doc1</p>
+                           <p> doc2</p>
+                           <p> myoutput</p>
+                           <p> $ wc -l doc > myoutput</p>
+                           <p> $ cat myoutput</p>
+                           <p> 23 doc</p>
+                          
+                     </div>
+                     <br>
+                     <p>Umesto toga, možemo da dobijemo nove podatke da se dodaju u datoteku korišćenjem operatora duplo veće od ( >> )</p>
+                     <br>
+                     <div class="primer-1">
+                         <p>$ cat myoutput </p>
+                            <p> 23 doc </p>
+                            <p> $ ls >> myoutput</p>
+                            <p> cat myoutput</p>
+                            <p> 23doc</p>
+                            <p> doc</p>
+                            <p> doc1</p>
+                            <p> doc2</p>
+                            <p> myoutput</p>
+                           
+                      </div>
+<br>
+<br>
+<br>
+                     <h3>Preusmeravanje iz datoteke</h3>
+
+<br>
+<br>
+                    <p>Ako koristimo operator manje od ( < ) onda možemo poslati podatke na drugi način. Pročitaćemo podatke iz datoteke i uneti ih u program <br>
+                         preko njegovog STDIN toka.</p>
+                         <br>
+                         <div class="primer-1">
+                            <p> $ wc -l myoutput</p>
+                            <p> 5 myoutput</p>
+                            <p> $ wc -l < myoutput</p>
+                            <p> 5</p>
+                         </div>
+<br>
+                    <p>Mnogi programi nam omogucavaju da dostavimo datoteku kao argument komandne linije i ona ce citati i obraditi sadrzaj te datoteke. <br>
+                    Mozda se pitate zasto koristimo ovog operatera. Gornji primer ilustruje suptilnu ali korisnu razliku. Primetićete da kada smo pokrenuli <br>
+                    wc obezbeđujući datoteku za obradu kao argument komandne linije, izlaz iz programa uključuje ime datoteke koja je obrađena. <br>
+                     Kada smo ga pokrenuli preusmeravajući sadržaj datoteke u wc, naziv datoteke nije odštampan. To je zato što kad god koristimo <br>
+                     preusmeravanje, podaci se šalju anonimno. Dakle, u gornjem primeru, wc je primio neki sadržaj za obradu, ali nema saznanja <br>
+                      o tome odakle je došao tako da možda neće odštampati ove informacije. Kao rezultat toga, ovaj mehanizam se cesto koristi <br>
+                       da bi se pomoćni podaci (koji mozda nisu potrebni) ne bi stampali. <br>
+                 <br>
+
+                  Lako mozemo kombinovati dva oblika preusmeravanja koje smo do sada videli u jednu komandu kao sto se vidi u primeru ispod.
+                    </p>
+                    <br>
+                    <div class="primer-1">
+                        <p> $ wc -l < doc > myoutput</doc></p>
+                        <p> $cat myoutput</p>
+                        <p> 23</p>
+                        <p> 5</p>
+                     </div>
+                     <br>
+                     <br>
+                     <br>
+                     <h3>Preusmeravanje stderr</h3>
+                     <br>
+                     <br>
+                     <p>Sada pogledajmo treći tok koji je Standard Error ili STDERR. Tri toka zapravo imaju brojeve povezane sa njima. STDERR je tok broj 2 i možemo <br>
+                        koristiti ove brojeve da identifikujemo tokove. Ako stavimo broj ispred operatora > onda će on preusmeriti taj tok (ako ne koristimo broj, <br>
+                         kao što smo radili do sada, onda je podrazumevano tok 1).</p>
+                         <br>
+                         <div class="primer-1">
+                            <p> $ ls -l video.mpg</p>
+                               <p>ls: cannot access 'video.mpg': No such file or directory</p>
+                               <p> $ ls -l video.mpg 2> errors.txt</p>
+                               <p> $ cat errors.txt</p>
+                               <p> ls: cannot access 'video.mpg': No such file or directory</p>
+                            
+                              
+                         </div>
+                         <br>
+                         <p>Možda želimo da sačuvamo i normalan izlaz i poruke o grešci u jednu datoteku. Ovo se može uraditi preusmeravanjem STDERR toka na STDOUT tok i preusmeravanjem STDOUT toka na datoteku. Prvo preusmeravamo na datoteku, a zatim preusmeravamo tok grešaka. Preusmeravanje na tok identifikujemo tako što stavljamo & ispred broja toka (inače bi se preusmerilo na datoteku koja se zove 1).</p>
+                             <br>
+                             <div class="primer-1">
+                                <p> $ ls -l video.mpg > doc > myoutput 2>&1 </p>
+                                <p> $ cat myoutput</p>
+                               <p>ls: cannot access 'video.mpg': No such file or directory</p> 
+                               <p> -rw-rw-r-- 1 user user 125 мар  8 10:30 doc</p> 
+
+                             </div>
+                             <br>
+                             <br>
+                             <br>
+                             <h3>Pajpovi</h3>
+                             <br>
+                             <br>
+                             <p>Do sada smo se bavili slanjem podataka u i iz datoteka. Sada ćemo pogledati mehanizam za slanje podataka iz jednog programa u drugi. Zove se piping i operator koji koristimo je ( | ) (nalazi se iznad obrnute kose crte ( \ ) na većini tastatura). Ono što ovaj operator radi je da unosi izlaz <br>
+                                 iz programa sa leve strane kao ulaz u program sa desne strane. U primeru ispod navešćemo samo prve 3 datoteke u direktorijumu. <br>
+                            </p>
+                            <br>
+                            <div class="primer-1">
+                                <p>$ls</p>
+                                <p>doc  doc1  doc2  errors.txt  myoutput</p>
+                                <p>$ ls | head -3</p>
+                                <p>doc</p>
+                                <p>doc1</p>
+                                <p>doc3</p>
+                            </div>
+                            <br>
+                            <p>Možemo sastaviti onoliko programa koliko želimo. U sledećem primeru smo zatim prebacili izlaz u rep tako da dobijemo samo treću datoteku.</p>
+                            <br>
+                            <div class="primer-1">
+                                <p>$ ls | head -3 | tail -1 |</p>
+                                <p>doc2</p>
+                            </div>
+                            <br>
+                            <p>Takodje mozemo kombinovati pajpove i redirekciju</p>
+                            <br>
+                            <div class="primer-1">
+                                <p>$ ls | head -3 | tail -1 > myoutput </p>
+                                <p>$ cat myoutput</p>
+                                <p>doc2</p>
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+
+
+                          <h3>Vise primera</h3>
+                          <br>
+                          <br>
+                          <p>Ispod je jos nekoliko primera koji će vam dati predstavu o vrstama stvari koje možete da uradite sa pajpovima. Postoji mnogo stvari koje možete postici uz pomoc <br>
+                             pajpova, a ovo su samo neke od njih</p>
+                             <br>
+                             <p>U ovom primeru sortiramo listu direktorijuma tako da svi direktorijumi budu prvi.</p>
+                             <br>
+                             <div class="primer-1">
+                               <p> $ ls -l /etc | tail -n +2 | sort </p>
+                               <p> drwxrwxr-x 3 nagios nagcmd 4096 Mar 29 08:52 nagios </p>
+                               <p> drwxr-x--- 2 news news 4096 Jan 27 02:22 news </p>
+                               <p> drwxr-x--- 2 root mysql 4096 Mar 6 22:39 mysql</p>
+                                <p>...</p>
+                             </div>
+                             <br>
+                             <p>Napravite listu svakog korisnika koji poseduje datoteku u datom direktorijumu, kao i koliko datoteka i direktorijuma poseduje.</p>
+                             <br>
+                             <div class="primer-1">
+                             <p>$ ls -l /projects/ghosttrail | tail -n +2 | sed 's/\s\s*/ /g' | cut -d ' ' -f 3 | sort | uniq -c</p> 
+                              <p>  8 mitar</p> 
+                              <p>  34 tina</p> 
+                              <p>  37 srdjan</p> 
+                              <p>  18 luka</p> 
+                             </div>
+                             <br>
+                             <br>
+                             <br>
+                             <h3>Rezime</h3>
+                             <br>
+                             <br>
+                             <b>></b>
+                             <p>Sacuvajte izlaz u datoteku</p>
+                             <br>
+                             <b>>></b>
+                             <p>Dodajte izlaz u datoteku</p>
+                             <br>
+                             <b><</b>
+                             <p>Procitajte unos iz datoteke</p>
+                             <br>
+                             <b>2></b>
+                             <p>Preusmeri poruke o gresci</p>
+                             <br>
+                             <b>|</b>
+                             <p>Posalji izlaz iz jendog programa kao ulaz u drugi</p>
+                            
+
+
+        <div>
+     <div>
+
+              
+
+</body>
+</html>

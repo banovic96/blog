@@ -25,28 +25,71 @@
   
         
   
-         <div class="section-ls">
+   <div class="section-ls">
 
-               <div class="naslov">
+      <div class="naslov">
 
-                    <h1 id="ls">man</h1>
-                    <br>
+         <h1 id="ls">man</h1>
 
-                      <p class="tekst">Preko komande man pristupamo uputstvu za upotrebu nekog programa</p>
+         <br>
 
-                      <br>
+             <p class="tekst">Preko komande man pristupamo uputstvu za upotrebu nekog programa. Otkucajte man, a zatim ime komande ciju man stranicu zelite <br>
+               da vidite. Nakon sto pokrenete komandu pritisnite slovo H kako bi videli odeljak za pomoc</p>
+             <p>Ukoliko zelite da izadjete pritisnite slovo Q</p>
+             
 
-                   <div class="primer">
+         <br>
 
-                      <p>$ man ls</p>
+                  <div class="primer">
+
+                      <p>$ man [ime komande]</p>
             
-                   </div>
+                  </div>
+         <br>
+            <p>Lista mogucih naslova ukljucuje</p>
 
-            
+         <br>
+
+             <p>- ime komande</p>
+             <p>- sintaksa komande</p>
+             <p>- konfiguracija</p>
+             <p>- opis komande</p>
+             <p>- primeri koji demonstriraju upotrebu komande</p>
+             <p>- funkcije i nacin na koje se one mogu zameniti</p>
+             <p>- opcije koje komanda prihvata</p>
+             <p>- razne beleske ukljucujuci potrebne dozvole</p>
+             <p>- probleme u toj verziji programa</p>
+
+         <br>
+
+
+            <p>Opcije komande man:</p>
+         <br>
+
+         <p>Opcija -f prikazuje sve man stranice koje odgovaraju navedenom imenu komande i navodi sekcije u kojima je data komanda prisutna.</p>
+
+            <div class="primer">
+               <p>$ man -f [opcija]</p>
+            </div>
+         <br>
+                
+            <p>Da biste prikazali stranicu iz određenog odeljka priručnika, koristite sintaksu:</p>
+
+              <div class="primer">
+               <p>$ man [broj] [naziv komande]</p>
+              </div>
+         <br>
+
+
+              <p>Koristite opciju -H da pročitate man stranicu u pretrazivacu po vasem izboru:
+            </p>
+
+            <div class="primer">
+               <p>$ man -H firefox vmstat</p>
+            </div>
+
+           
         <div>
      <div>
-
-              
-
 </body>
 </html>
