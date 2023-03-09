@@ -92,6 +92,30 @@ body {
   
 }
 
+.start1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 30px;
+    padding-bottom: 10px; */
+}
+
+.start1 p {
+    padding-top: 30px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: none;
+   font-size: 33px;
+   font-family: Cabin, sans-serif,  !important;
+   color: rgba(255, 255, 255, 0.493);
+
+}
+
+.start1 p:hover {
+    color: white;
+}
+
 .start h1 {
     font-size: 30px;
     color: rgba(255, 255, 255, 0.7);
@@ -103,7 +127,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: none;
-    font-size: 30px;
+    font-size: 33px;
     font-family: Cabin, sans-serif,  !important;
     color: white; 
     
@@ -117,8 +141,8 @@ body {
     flex-direction: initial;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 1px;
+    padding-top: 10px;
+    /* padding-bottom:; */
     
     
     
@@ -126,15 +150,13 @@ body {
 
 
    .section .box a{
-    max-width: 1200px;
-    
-    
+    /* max-width: 1200px; */
     color: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 30px;
-    font-size: 30px;
+    font-size: 28px;
     background: none;
     
    
@@ -226,6 +248,8 @@ body {
    
    
 }
+
+
 
 
 .video{
