@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linux blog</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="header">
@@ -28,25 +29,58 @@
        
             <div class="naslov"> 
 
-                <h1 id="ls">pwd<img src="../icons/youtube-4-48.ico" alt=""></h1>
+                <h1 id="ls">pwd</h1>
                    <br>
 
             <p class="tekst"> Stampa na ekranu apsolutnu putanju direktorijuma u kom se trenutno nalazimo. Lokacija datoteke ili direktorijuma <br>
                  se naziva putanja. Ako imamo direktorijum koji se zove home i koji sadrzi poddirektorijum doc koji u sebi ima doc1, <br>
                   onda je putanja do tog direktorijuma </p>
                   <br>
+<div class="inp">input:</div>
+<div class="primer">
+    <div class="textbtn">
+    <p id="text2">$ pwd</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text2')">
+</div>
+</div>
 
-            <p>Putanja do direktorijuma doc1</p>
+
+            <div class="inp">output:</div>
                         <div class="primer">
-                                    <p>$ home/doc/doc1</p>
+                            <div class="textbtn">
+                                    <p id="text1">$ home/doc/doc1</p> 
 
                         </div>
-
+                    </div>
+                        <p>Putanja do direktorijuma doc1</p>
              
-                         
-        
+                         <br>
+                         <br>
+
+                        <div class="video">
+                            <iframe width="320" height="260" src="https://www.youtube.com/embed/bBM_flm2Ths" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+
+
+
+                       
              </div>
     </div>
-        
+        <script>
+
+
+function copy(copyId){
+    let inputElement = document.createElement("input");
+    inputElement.type = "text";
+    let copyText = document.getElementById(copyId).innerHTML;
+    inputElement.value = copyText;
+    document.body.appendChild(inputElement);
+    inputElement.select();
+    document.execCommand('copy');
+    document.body.removeChild(inputElement);
+}
+
+
+        </script>
 </body>
 </html>

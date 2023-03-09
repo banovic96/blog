@@ -27,7 +27,7 @@
         <div class="box-lss">
 
             <div class="naslov">
-                <h1 id="ls">ls<img src="../icons/youtube-4-48.ico" alt=""></h1>
+                <h1 id="ls">ls</h1>
                
                <br>
                <br>
@@ -43,12 +43,13 @@
         
        
         <p class="inp">input:</p>
-        
+       
                 <div class="primer">
-                    
-                          <p>$ ls -a</p>
-                </div>
-                
+                    <div class="textbtn">
+                          <p id="text2">$ ls -a</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text2')">
+                        </div>
+            </div>
+
         <p class="inp">output:</p>
        
         <div class="primer">
@@ -64,15 +65,17 @@
         <p class="inp">input:</p>
        
                 <div class="primer">
-                           <p>$ ls -l</p>
+                    <div class="textbtn">
+                           <p id="text">$ ls -l</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text')">
                 </div>
+            </div>
                
                 <p class="inp">output:</p>
                
                 <div class="primer">
-                   <p> -rw-rw-r-- 1 user    6 мар  8 10:15 doc</p>
-         <p>-rw-rw-r-- 1 user    6 мар  8 10:15 doc1</p>
-         <p> drwxrwxr-x 2 user 4096 мар  8 10:12 doc2</p>
+                   <p> -rw-rw-r-- 1 user    6 мар  8 10:15 doc <br>
+         -rw-rw-r-- 1 user    6 мар  8 10:15 doc1 <br>
+          drwxrwxr-x 2 user 4096 мар  8 10:12 doc2</p>
 
                 </div>
 
@@ -86,8 +89,10 @@
         <p class="inp">input:</p>
        
                 <div class="primer">
-                           <p>$ ls -F </p>
+                    <div class="textbtn">
+                           <p id="text3">$ ls -F </p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text3')">
                 </div>
+            </div>
             
                 <p class="inp">output </p>
                
@@ -96,23 +101,7 @@
                     </p>
                 </div>
 
-<!--              
-                <br>
-                
-        <p>Lista sadrzaja stampa se u vise kolona</p>
-                <div class="primer">
-                           <p>$ ls -C</p>
-                </div>
 
-           
-                <br>
-        <p>Prikazuje velicinu datoteka u Kilobajtima, Megabajtima i drugim vecim jedinicama</p>
-                <div class="primer">
-                        <p>$ ls -h</p>
-                </div>
-
-                <br>
-                <br> -->
             <br>
             <br>
                 <div class="video">
@@ -126,7 +115,22 @@
     </div>
     
    
+        <script>
 
+
+function copy(copyId){
+    let inputElement = document.createElement("input");
+    inputElement.type = "text";
+    let copyText = document.getElementById(copyId).innerHTML;
+    inputElement.value = copyText;
+    document.body.appendChild(inputElement);
+    inputElement.select();
+    document.execCommand('copy');
+    document.body.removeChild(inputElement);
+}
+
+
+        </script>
 
 </body>
 </html>

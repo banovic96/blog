@@ -35,29 +35,34 @@
                <br>
 
       <p>Stavicemo opciju -h posle cega dobijamo sledeci ispis</p>
+      <div class="inp">input:</div>
 
             <div class="primer">
-                       <p>$ df -h dev/sda1</p>
+               <div class="textbtn">
+                       <p id="text7">$ df -h dev/sda1</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text7')">
             </div>
+         </div>
+            <div class="inp">output:</div>
 
-            <br>
-
-      <p>Primer izvrsavanja komande df <p>
          
             <div class="primer">
-                        <p>Filesystem Size Used Avail Used% Mounted on</p>
-                        <p>dev/sda  511M 62M 450M 12% /boot</p>
+                        <p>Filesystem Size Used Avail Used% Mounted on <br>
+                       dev/sda  511M 62M 450M 12% /boot</p>
             </div>
             
       <p>(U primeru koji smo videli, UEFI particija ima umereno zauzeće od 62 Megabajta i montirana je kao boot direktorijum.) </p>
 
 
-
+<br>
+<br>
+<div class="video">
+   <iframe width="320" height="260" src="https://www.youtube.com/embed/1M2gFkqKnv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
   </div>
 </div>
 
 
-
+<script src="../app.js"></script>
 </body>
 </html>

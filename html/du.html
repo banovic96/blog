@@ -34,10 +34,16 @@
 
                <br>
       <p>Primer izvršavanja komande du za direktorijum koji ne sadrži poddirektorijume.</p>
-
+<div class="inp">input:</div>
             <div class="primer">
-                       <p>$ du vimrc</p>
-                       <p>12.K vimrc</p>
+               <div class="textbtn">
+                       <p id="text8">$ du vimrc</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text8')">
+                     </div>
+            </div>
+
+            <div class="inp">output:</div>
+            <div class="primer">
+               <p>12.K vimrc</p>
             </div>
 
                
@@ -46,9 +52,17 @@
 
       <p>Ako komandi kao argument predamo putanju do direktorijuma, dobićemo ispis koji sadrži: i podatke za poddirektorijume, i podatak o ukupnom zauzeću za traženi direktorijum:</p>
 <br>
-            <div class="primer">
 
-               <p>$ du -h slike</p>
+            <div class="inp">input:</div>
+
+            <div class="primer">
+<div class="textbtn">
+               <p id="text9">$ du -h slike</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text9')">
+            </div>
+             </div>
+
+             <div class="inp">output</div>
+             <div class="primer">
                <p>5M slike/screenshot</p>
                <p>14M slike/pozadine</p>
                <p>20M slike</p>
@@ -58,10 +72,14 @@
        <p>Primer izvršavanja komadne du za direktorijum koji sadrži datoteke i poddirektorijume.
                 <br>
                 
-              </p>
+              <br>
+
+              <div class="video">
+               <iframe width="320" height="260" src="https://www.youtube.com/embed/fN0S7tpVG8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
 
 
 
-
+<script src="../app.js"></script>
 </body>
 </html>

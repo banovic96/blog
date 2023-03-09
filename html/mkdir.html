@@ -40,9 +40,10 @@
                       <br>
                       <p>Document je naziv direktorijuma koji zelimo da napravimo</p>
                    <div class="primer">
+                     <div class="textbtn">
 
-                      <p>$ mkdir document</p>
-            
+                      <p id="text5">$ mkdir document</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text5')">
+                     </div>
                    </div>
 
                       
@@ -50,11 +51,12 @@
                       <br>
                       <p>Kreirace sve direktorijume koji vode do datog direktorijuma, ukoliko vec ne postoje</p>
                    <div class="primer">
+                     <div class="textbtn">
 
-                      <p>$ mkdir -p doc1/doc2/doc3</p>
+                      <p id="text6">$ mkdir -p doc1/doc2/doc3</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text6')">
 
                     </div>
-
+                  </div>
                     
 
                      <br>
@@ -62,15 +64,45 @@
                      <p>Komanda <b>rmdir</b> se koristi za brisanje praznog direktorijuma</p>
 
                     <div class="primer">
-                     <p>$ rmdir document</p>
+                     <div class="textbtn">
+                     <p id="text7">$ rmdir document</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text7')">
                     </div> 
+                  </div>
 
-        
-            
+                  <br>
+                  <br>
+
+
+<div class="video">
+
+                  <iframe width="320" height="260" src="https://www.youtube.com/embed/qixSaXSUs-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+               </video>
         <div>
+
+        </div>
      <div>
 
               
+
+
+      <script>
+
+
+         function copy(copyId){
+             let inputElement = document.createElement("input");
+             inputElement.type = "text";
+             let copyText = document.getElementById(copyId).innerHTML;
+             inputElement.value = copyText;
+             document.body.appendChild(inputElement);
+             inputElement.select();
+             document.execCommand('copy');
+             document.body.removeChild(inputElement);
+         }
+         
+         
+                 </script>
+         
+
 
 </body>
 </html>
