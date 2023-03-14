@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="header">
+    <div class="hb">
+         <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+            <ul class="navbar">
+                <li><a href="../index.html">Pocetna</a></li>
+            </ul>
+
+    </div>
+</div>
+    
+
+<div class="section-ls">
+    
+       <div class="naslov1">
+
+        
+
+              <div class="man"> <b><p>chown (1) - man page</p> </b> </div>
+<br>
+<br>
+
+          <p>    NAME <br>
+       chown - change file owner and group
+
+<p>SYNOPSIS <br>
+       chown [OPTION]... [OWNER][:[GROUP]] FILE... <br>
+       chown [OPTION]... --reference=RFILE FILE...
+
+<p>DESCRIPTION
+     <p>  This  manual  page documents the GNU version of chown.  chown
+       changes the user and/or group ownership of each  given  file.
+       If  only  an owner (a user name or numeric user ID) is given,
+       that user is made the owner  of  each  given  file,  and  the
+       files'  group  is not changed.  If the owner is followed by a
+       colon and a group name (or numeric group ID), with no  spaces
+       between  them, the group ownership of the files is changed as
+       well.  If a colon but no group name follows  the  user  name,
+       that user is made the owner of the files and the group of the
+       files is changed to that user's login group.   If  the  colon
+       and group are given, but the owner is omitted, only the group
+       of the files is changed; in this  case,  chown  performs  the
+       same  function as chgrp.  If only a colon is given, or if the
+       entire operand is empty, neither the owner nor the  group  is
+       changed.
+
+<p>OPTIONS <br>
+       Change  the  owner  and/or group of each FILE to OWNER and/or
+       GROUP.  With --reference, change the owner and group of  each
+       FILE to those of RFILE.
+
+     <p>  -c, --changes <br>
+              like verbose but report only when a change is made
+
+     <p>  -f, --silent, --quiet <br>
+              suppress most error messages
+
+     <p>  -v, --verbose <br>
+              output a diagnostic for every file processed
+
+    <p>   --dereference <br>
+              affect the referent of each symbolic link (this is the
+              default), rather than the symbolic link itself
+
+     <p>  -h, --no-dereference <br>
+              affect symbolic links instead of any  referenced  file
+              (useful  only on systems that can change the ownership
+              of a symlink)
+
+      <p> --from=CURRENT_OWNER:CURRENT_GROUP <br>
+              change the owner and/or group of each file only if its
+              current owner and/or group match those specified here.
+              Either may be omitted, in which case a  match  is  not
+              required for the omitted attribute
+
+    <p>   --no-preserve-root <br>
+              do not treat '/' specially (the default)
+
+       --preserve-root <br>
+              fail to operate recursively on '/'
+
+    <p>   --reference=RFILE <br>
+              use  RFILE's  owner  and  group rather than specifying
+              OWNER:GROUP values
+
+  <p>     -R, --recursive <br>
+              operate on files and directories recursively
+
+   <p>    The following options modify how  a  hierarchy  is  traversed
+       when  the  -R  option is also specified.  If more than one is
+       specified, only the final one takes effect.
+
+   <p>    -H     if a command line argument is a symbolic link to a di‐
+              rectory, traverse it
+
+     <p>  -L     traverse  every  symbolic  link to a directory encoun‐
+              tered
+
+     <p>  -P     do not traverse any symbolic links (default)
+
+      <p> --help display this help and exit
+
+      <p> --version <br>
+              output version information and exit
+
+    <p>   Owner is unchanged if missing.  Group is unchanged  if  miss‐
+       ing, but changed to login group if implied by a ':' following
+       a symbolic OWNER.  OWNER and GROUP may be numeric as well  as
+       symbolic.
+
+<p>EXAMPLES <br>
+      <p> chown root /u <br>
+              Change the owner of /u to "root".
+
+     <p>  chown root:staff /u <br>
+              Likewise, but also change its group to "staff".
+
+    <p>   chown -hR root /u <br>
+              Change the owner of /u and subfiles to "root".
+
+<p>AUTHOR <br>
+       Written by David MacKenzie and Jim Meyering.
+
+<p>REPORTING BUGS <br>
+       GNU   coreutils   online   help:   <https://www.gnu.org/soft‐
+       ware/coreutils/>
+       Report  any  translation  bugs  to   <https://translationpro‐
+       ject.org/team/>
+
+<p>COPYRIGHT <br>
+       Copyright  ©  2020  Free  Software  Foundation, Inc.  License
+       GPLv3+: GNU  GPL  version  3  or  later  <https://gnu.org/li‐
+       censes/gpl.html>.
+       This  is  free  software:  you  are free to change and redis‐
+       tribute it.  There is NO WARRANTY, to the extent permitted by
+       law.
+
+<p>SEE ALSO <br>
+       chown(2)
+
+    <p>   Full     documentation    <https://www.gnu.org/software/core‐
+       utils/chown>
+       or available locally via: info '(coreutils) chown invocation'
+
+<p>GNU coreutils 8.32          February 2022                   CHOWN(1)
+<br>
+<br>
+
+
+    </div>
+   
+</div>
+
+</body>
+</html>

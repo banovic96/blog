@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="header">
+    <div class="hb">
+         <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+            <ul class="navbar">
+                <li><a href="../index.html">Pocetna</a></li>
+            </ul>
+
+    </div>
+</div>
+    
+
+<div class="section-ls">
+    
+    <div class="naslov1">
+
+        
+
+      <div class="man"> <b><p>touch(1) - man page</p> </b>                   </div>
+<br>
+<br>
+<p>NAME <br>
+       touch - change file timestamps
+
+       <p>SYNOPSIS <br>
+       touch [OPTION]... FILE...
+
+       <p>DESCRIPTION <br>
+       Update  the access and modification times of each FILE to the
+       current time.
+
+       <p> A FILE argument that does not exist is created empty,  unless
+       -c or -h is supplied.
+
+       <p>  A  FILE  argument string of - is handled specially and causes
+       touch to change the times of the file associated  with  stan‐
+       dard output.
+
+       <p>  Mandatory  arguments  to long options are mandatory for short
+       options too.
+
+       <p> -a     change only the access time
+
+        <p>  -c, --no-create <br>
+              do not create any files
+
+              <p>-d, --date=STRING <br>
+              parse STRING and use it instead of current time
+
+              <p> -f     (ignored)
+
+                <p> -h, --no-dereference <br>
+              affect each symbolic link instead  of  any  referenced
+              file (useful only on systems that can change the time‐
+              stamps of a symlink)
+
+              <p>   -m     change only the modification time
+
+                <p>  -r, --reference=FILE <br>
+              use this file's times instead of current time
+
+              <p>  -t STAMP <br>
+              use [[CC]YY]MMDDhhmm[.ss] instead of current time
+
+              <p>  --time=WORD <br>
+              change the specified time: WORD is access,  atime,  or
+              use: equivalent to -a WORD is modify or mtime: equiva‐
+              lent to -m
+
+              <p>  --help display this help and exit
+
+                <p>  --version <br>
+              output version information and exit
+
+              <p>   Note that the -d and -t options  accept  different  time-date
+       formats.
+
+       <p>DATE STRING <br>
+       The --date=STRING is a mostly free format human readable date
+       string  such  as  "Sun,  29  Feb  2004  16:21:42  -0800"   or
+       "2004-02-29 16:21:42" or even "next Thursday".  A date string
+       may contain items indicating calendar date, time of day, time
+       zone, day of week, relative time, relative date, and numbers.
+       An empty string indicates the beginning of the day.  The date
+       string  format is more complex than is easily documented here
+       but is fully described in the info documentation.
+
+       <p>AUTHOR <br>
+       Written by Paul Rubin, Arnold  Robbins,  Jim  Kingdon,  David
+       MacKenzie, and Randy Smith.
+
+       <p>REPORTING BUGS <br>
+       GNU   coreutils   online   help:   <https://www.gnu.org/soft‐
+       ware/coreutils/>
+       Report  any  translation  bugs  to   <https://translationpro‐
+       ject.org/team/>
+
+       <p>COPYRIGHT <br>
+       Copyright  ©  2020  Free  Software  Foundation, Inc.  License
+       GPLv3+: GNU  GPL  version  3  or  later  <https://gnu.org/li‐
+       censes/gpl.html>.
+       This  is  free  software:  you  are free to change and redis‐
+       tribute it.  There is NO WARRANTY, to the extent permitted by
+       law.
+
+       <p>SEE ALSO <br>
+       Full     documentation    <https://www.gnu.org/software/core‐
+       utils/touch>
+       or available locally via: info '(coreutils) touch invocation'
+</div>
+
+</div>
+<script src="../app.js"></script>
+
+</body>
+</html>

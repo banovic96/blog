@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="header">
+    <div class="hb">
+         <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+            <ul class="navbar">
+                <li><a href="../index.html">Pocetna</a></li>
+            </ul>
+
+    </div>
+</div>
+    
+
+<div class="section-ls">
+    
+    <div class="naslov1">
+
+        
+
+      <div class="man">  <b><p>du - man comand</p></b> </div>
+     
+<br>
+<br>
+
+<p> NAME <br>
+       du - estimate file space usage
+
+       <p> SYNOPSIS <br>
+       du [OPTION]... [FILE]... <br>
+       du [OPTION]... --files0-from=F
+
+       <p> DESCRIPTION <br>
+       Summarize disk usage of the set of FILEs, recursively for directories.
+
+       <p>    Mandatory arguments to long options are mandatory for short options too.
+
+        <p>  -0, --null <br>
+              end each output line with NUL, not newline
+
+              <p> -a, --all <br>
+              write counts for all files, not just directories
+
+              <p>    --apparent-size <br>
+              print  apparent  sizes,  rather  than  disk  usage;  although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect
+              blocks, and the like
+
+              <p>    -B, --block-size=SIZE <br>
+              scale sizes by SIZE before printing them; e.g., '-BM' prints sizes in units of 1,048,576 bytes; see SIZE format below
+
+              <p>   -b, --bytes <br>
+              equivalent to '--apparent-size --block-size=1'
+
+              <p>   -c, --total <br>
+              produce a grand total
+
+              <p>   -D, --dereference-args <br>
+              dereference only symlinks that are listed on the command line
+
+              <p>   -d, --max-depth=N <br>
+              print the total for a directory (or file, with --all) only if it is N or fewer levels below the command line argument;  --max-depth=0 is the same as --summarize
+
+              <p>    --files0-from=F
+              summarize disk usage of the NUL-terminated file names specified in file F; if F is -, then read names from standard input
+
+              <p>     -H     equivalent to --dereference-args (-D)
+
+                <p>     -h, --human-readable <br>
+              print sizes in human readable format (e.g., 1K 234M 2G)
+
+              <p>     --inodes <br>
+              list inode usage information instead of block usage
+
+              <p>     -k     like --block-size=1K
+
+                <p>     -L, --dereference <br>
+              dereference all symbolic links
+
+              <p>   -l, --count-links <br>
+              count sizes many times if hard linked
+
+              <p>   -m     like --block-size=1M
+
+                <p>   -P, --no-dereference <br>
+              don't follow any symbolic links (this is the default)
+
+              <p>  -S, --separate-dirs <br>
+              for directories do not include size of subdirectories
+
+              <p>   --si   like -h, but use powers of 1000 not 1024
+
+                <p>    -s, --summarize <br>
+              display only a total for each argument
+
+              <p>    -t, --threshold=SIZE <br>
+              exclude entries smaller than SIZE if positive, or entries greater than SIZE if negative
+
+              <p>   --time show time of the last modification of any file in the directory, or any of its subdirectories
+
+                <p>    --time=WORD <br>
+              show time as WORD instead of modification time: atime, access, use, ctime or status
+
+              <p>   --time-style=STYLE <br>
+              show times using STYLE, which can be: full-iso, long-iso, iso, or +FORMAT; FORMAT is interpreted like in 'date'
+
+              <p>  -X, --exclude-from=FILE <br>
+              exclude files that match any pattern in FILE
+
+              <p>   --exclude=PATTERN <br>
+              exclude files that match PATTERN
+
+              <p>    -x, --one-file-system <br>
+              skip directories on different file systems
+
+              <p>   --help display this help and exit
+
+                <p>   --version <br>
+              output version information and exit
+
+              <p>    Display values are in units of the first available SIZE from --block-size, and the DU_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables.  Otherwise, units default to 1024 bytes  (or
+       512 if POSIXLY_CORRECT is set).
+
+       <p>     The  SIZE  argument  is  an integer and optional unit (example: 10K is 10*1024).  Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).  Binary prefixes can be used, too:
+       KiB=K, MiB=M, and so on.
+
+       <p> PATTERNS <br>
+       PATTERN is a shell pattern (not a regular expression).  The pattern ? matches any one character, whereas * matches any string (composed of zero, one or multiple  characters).   For  example,
+       *.o will match any files whose names end in .o.  Therefore, the command
+
+          <p>    du --exclude='*.o'
+
+              <p>    will skip all files and subdirectories ending in .o (including the file .o itself).
+
+                <p> AUTHOR <br>
+       Written by Torbjorn Granlund, David MacKenzie, Paul Eggert, and Jim Meyering.
+
+       <p> REPORTING BUGS <br>
+       GNU coreutils online help: <a href="https://www.gnu.org/software/coreutils/">link</a> <br>
+       Report any translation bugs to <a href=" https://translationproject.org/team/>">link</a>
+
+       <p> COPYRIGHT <br>
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <a href=" https://translationproject.org/team/>">link</a>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+
+       <p> SEE ALSO <br>
+       Full documentation <a href=" https://www.gnu.org/software/coreutils/du>">link</a>
+       or available locally via: info '(coreutils) du invocation'
+
+
+
+
+    </div>
+   
+</div>
+
+</body>
+</html>

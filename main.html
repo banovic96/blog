@@ -33,7 +33,7 @@
                     <br>
                     <br>
 
-                      <p class="tekst">U ovom clanku razmatramo redirekciju i pajpove. Ova tehnika omogućava korisniku da kreira prilagođene <br>
+                      <p class="tekst">U ovom clanku razmatramo redirekciju i pajpove. Ova tehnika omogućava korisniku da kreira prilagođene
                          komande kombinovanjem vise manjih komandi da bi postigao specificne zadatke koji se ne mogu posticci jednom Linux komandom.</p>
 
                       <br>
@@ -47,7 +47,7 @@
                     <br>
                     <br>
 
-                       <p>Piping i redirekcija su sredstva pomoću kojih mozemo povezati ove tokove izmedju programa i datoteka da bismo podatke usmerili <br>
+                       <p>Piping i redirekcija su sredstva pomoću kojih mozemo povezati ove tokove izmedju programa i datoteka da bismo podatke usmerili 
                          na zanimljive i korisne načine.
                     </p>
                     <br>
@@ -56,8 +56,8 @@
         <h3>Preusmeravanje u datoteku</h3>
         <br>
         <br>
-        <p>Obicno cemo svoj izlaz dobiti na ekranu, sto je dobro u vecini vremena, mejdutim ponekad mozemo da ga sacuvamo u datoteci, <br>
-        da bi smo sacuvali kao zapis, ubacili u drugi sistem ili poslali nekom drugom. Operator veće od ( > ) ukazuje komandnoj liniji da <br>
+        <p>Obicno cemo svoj izlaz dobiti na ekranu, sto je dobro u vecini vremena, mejdutim ponekad mozemo da ga sacuvamo u datoteci, 
+        da bi smo sacuvali kao zapis, ubacili u drugi sistem ili poslali nekom drugom. Operator veće od ( > ) ukazuje komandnoj liniji da 
         zelimo da se izlaz programa sacuva u datoteci umesto da se stampa na ekranu. Hajde da vidimo primer.</p>
             <br>
             <div class="primer-1">
@@ -75,9 +75,9 @@
                     
             </div>
              <br>
-            <p><b>Red1 -</b> pocnimo tako sto cemo videti sta se nalazi u nasem trenutnom direktorijumu</p>
-            <p><b>Red2 -</b> sada ćemo pokrenuti istu komandu, ali ovog puta koristimo > da kažemo terminalu da sačuva <br>
-                izlaz u datoteku mioutput. Primetićete da ne moramo da kreiramo datoteku pre nego što je sačuvamo. <br>
+            <p><b>Red1 -</b> pocnimo tako sto cemo videti sta se nalazi u nasem trenutnom direktorijumu
+            <p><b>Red2 -</b> sada ćemo pokrenuti istu komandu, ali ovog puta koristimo > da kažemo terminalu da sačuva 
+                izlaz u datoteku mioutput. Primetićete da ne moramo da kreiramo datoteku pre nego što je sačuvamo.
                  Terminal će ga automatski kreirati ako ne postoj</p>
                 <p><b>Red4 -</b> kao što vidite, naš novi fajl je kreiran.</p>
                  <p> <b>Red6 -</b> hajde da pogledamo šta je tamo sačuvano.</p>
@@ -87,7 +87,7 @@
                 <h3>Cuvanje u postojecoj datoteci</h3>
                 <br>
                 <br>
-                <p>Ako preusmerimo prema datoteci koja ne postoji, ona ce se automatski kreirati za nas. Medjutim ako sacuvamo u datoteku koja vec postoji, <br>
+                <p>Ako preusmerimo prema datoteci koja ne postoji, ona ce se automatski kreirati za nas. Medjutim ako sacuvamo u datoteku koja vec postoji,
                     njen sadrzaj ce biti obrisan, a zatim ce se novi izlaz sacuvati u njemu.</p>
                     <br>
                     <div class="primer-1">
@@ -123,7 +123,7 @@
 
 <br>
 <br>
-                    <p>Ako koristimo operator manje od ( < ) onda možemo poslati podatke na drugi način. Pročitaćemo podatke iz datoteke i uneti ih u program <br>
+                    <p>Ako koristimo operator manje od ( < ) onda možemo poslati podatke na drugi način. Pročitaćemo podatke iz datoteke i uneti ih u program 
                          preko njegovog STDIN toka.</p>
                          <br>
                          <div class="primer-1">
@@ -133,12 +133,12 @@
                             <p> 5</p>
                          </div>
 <br>
-                    <p>Mnogi programi nam omogucavaju da dostavimo datoteku kao argument komandne linije i ona ce citati i obraditi sadrzaj te datoteke. <br>
-                    Mozda se pitate zasto koristimo ovog operatera. Gornji primer ilustruje suptilnu ali korisnu razliku. Primetićete da kada smo pokrenuli <br>
-                    wc obezbeđujući datoteku za obradu kao argument komandne linije, izlaz iz programa uključuje ime datoteke koja je obrađena. <br>
-                     Kada smo ga pokrenuli preusmeravajući sadržaj datoteke u wc, naziv datoteke nije odštampan. To je zato što kad god koristimo <br>
-                     preusmeravanje, podaci se šalju anonimno. Dakle, u gornjem primeru, wc je primio neki sadržaj za obradu, ali nema saznanja <br>
-                      o tome odakle je došao tako da možda neće odštampati ove informacije. Kao rezultat toga, ovaj mehanizam se cesto koristi <br>
+                    <p>Mnogi programi nam omogucavaju da dostavimo datoteku kao argument komandne linije i ona ce citati i obraditi sadrzaj te datoteke. 
+                    Mozda se pitate zasto koristimo ovog operatera. Gornji primer ilustruje suptilnu ali korisnu razliku. Primetićete da kada smo pokrenuli 
+                    wc obezbeđujući datoteku za obradu kao argument komandne linije, izlaz iz programa uključuje ime datoteke koja je obrađena. 
+                     Kada smo ga pokrenuli preusmeravajući sadržaj datoteke u wc, naziv datoteke nije odštampan. To je zato što kad god koristimo 
+                     preusmeravanje, podaci se šalju anonimno. Dakle, u gornjem primeru, wc je primio neki sadržaj za obradu, ali nema saznanja 
+                      o tome odakle je došao tako da možda neće odštampati ove informacije. Kao rezultat toga, ovaj mehanizam se cesto koristi 
                        da bi se pomoćni podaci (koji mozda nisu potrebni) ne bi stampali. <br>
                  <br>
 
@@ -157,8 +157,8 @@
                      <h3>Preusmeravanje stderr</h3>
                      <br>
                      <br>
-                     <p>Sada pogledajmo treći tok koji je Standard Error ili STDERR. Tri toka zapravo imaju brojeve povezane sa njima. STDERR je tok broj 2 i možemo <br>
-                        koristiti ove brojeve da identifikujemo tokove. Ako stavimo broj ispred operatora > onda će on preusmeriti taj tok (ako ne koristimo broj, <br>
+                     <p>Sada pogledajmo treći tok koji je Standard Error ili STDERR. Tri toka zapravo imaju brojeve povezane sa njima. STDERR je tok broj 2 i možemo 
+                        koristiti ove brojeve da identifikujemo tokove. Ako stavimo broj ispred operatora > onda će on preusmeriti taj tok (ako ne koristimo broj, 
                          kao što smo radili do sada, onda je podrazumevano tok 1).</p>
                          <br>
                          <div class="primer-1">
@@ -186,8 +186,8 @@
                              <h3>Pajpovi</h3>
                              <br>
                              <br>
-                             <p>Do sada smo se bavili slanjem podataka u i iz datoteka. Sada ćemo pogledati mehanizam za slanje podataka iz jednog programa u drugi. Zove se piping i operator koji koristimo je ( | ) (nalazi se iznad obrnute kose crte ( \ ) na većini tastatura). Ono što ovaj operator radi je da unosi izlaz <br>
-                                 iz programa sa leve strane kao ulaz u program sa desne strane. U primeru ispod navešćemo samo prve 3 datoteke u direktorijumu. <br>
+                             <p>Do sada smo se bavili slanjem podataka u i iz datoteka. Sada ćemo pogledati mehanizam za slanje podataka iz jednog programa u drugi. Zove se piping i operator koji koristimo je ( | ) (nalazi se iznad obrnute kose crte ( \ ) na većini tastatura). Ono što ovaj operator radi je da unosi izlaz 
+                                 iz programa sa leve strane kao ulaz u program sa desne strane. U primeru ispod navešćemo samo prve 3 datoteke u direktorijumu. 
                             </p>
                             <br>
                             <div class="primer-1">
@@ -222,7 +222,7 @@
                           <h3>Vise primera</h3>
                           <br>
                           <br>
-                          <p>Ispod je jos nekoliko primera koji će vam dati predstavu o vrstama stvari koje možete da uradite sa pajpovima. Postoji mnogo stvari koje možete postici uz pomoc <br>
+                          <p>Ispod je jos nekoliko primera koji će vam dati predstavu o vrstama stvari koje možete da uradite sa pajpovima. Postoji mnogo stvari koje možete postici uz pomoc
                              pajpova, a ovo su samo neke od njih</p>
                              <br>
                              <p>U ovom primeru sortiramo listu direktorijuma tako da svi direktorijumi budu prvi.</p>

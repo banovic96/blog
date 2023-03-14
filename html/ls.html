@@ -27,7 +27,8 @@
         <div class="box-lss">
 
             <div class="naslov">
-                <h1 id="ls">ls</h1>
+
+                <h1 id="ls">ls<a id="manpage" href="../man/lsman.html">man</a></h1>
                
                <br>
                <br>
@@ -114,23 +115,7 @@
         </div>
     </div>
     
-   
-        <script>
-
-
-function copy(copyId){
-    let inputElement = document.createElement("input");
-    inputElement.type = "text";
-    let copyText = document.getElementById(copyId).innerHTML;
-    inputElement.value = copyText;
-    document.body.appendChild(inputElement);
-    inputElement.select();
-    document.execCommand('copy');
-    document.body.removeChild(inputElement);
-}
-
-
-        </script>
-
+   <script src="../app.js"></script>
+       
 </body>
 </html>

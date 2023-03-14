@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="header">
+    <div class="hb">
+         <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+            <ul class="navbar">
+                <li><a href="../index.html">Pocetna</a></li>
+            </ul>
+
+    </div>
+</div>
+    
+
+<div class="section-ls">
+    
+    <div class="naslov1">
+
+        
+
+      <div class="man">  <b><p>cp - man comand</p></b> </div>
+      <br>
+      <br>
+
+
+  <p>    NAME <br>
+       cp - copy files and directories
+
+       <p> SYNOPSIS <br>
+       cp [OPTION]... [-T] SOURCE DEST
+       cp [OPTION]... SOURCE... DIRECTORY
+       cp [OPTION]... -t DIRECTORY SOURCE...
+
+       <p> DESCRIPTION <br>
+       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+       <p>   Mandatory  arguments  to long options are mandatory for short
+       options too.
+
+       <p>   -a, --archive <br>
+              same as -dR --preserve=all
+
+              <p>   --attributes-only <br>
+              don't copy the file data, just the attributes
+
+              <p>  --backup[=CONTROL] <br>
+              make a backup of each existing destination file
+
+              <p>    -b     like --backup but does not accept an argument
+
+                <p>   --copy-contents <br>
+              copy contents of special files when recursive
+
+              <p>   -d     same as --no-dereference --preserve=links
+
+                <p>   -f, --force <br>
+              if an existing destination file cannot be opened,  re‐
+              move it and try again (this option is ignored when the
+              -n option is also used)
+
+              <p>  -i, --interactive <br>
+              prompt before overwrite (overrides a previous  -n  op‐
+              tion)
+
+              <p>   -H     follow command-line symbolic links in SOURCE
+
+                <p>   -l, --link <br>
+              hard link files instead of copying
+
+              <p>   -L, --dereference <br>
+              always follow symbolic links in SOURCE
+
+              <p>   -n, --no-clobber <br>
+              do  not overwrite an existing file (overrides a previ‐
+              ous -i option)
+
+              <p>   -P, --no-dereference <br>
+              never follow symbolic links in SOURCE
+
+              <p>   -p     same as --preserve=mode,ownership,timestamps
+
+                <p>  --preserve[=ATTR_LIST] <br>
+              preserve the specified attributes (default:  mode,own‐
+              ership,timestamps), if possible additional attributes:
+              context, links, xattr, all
+
+              <p>  --no-preserve=ATTR_LIST <br>
+              don't preserve the specified attributes
+
+              <p>   --parents <br>
+              use full source file name under DIRECTORY
+
+              <p>   -R, -r, --recursive <br>
+              copy directories recursively
+
+              <p>  --reflink[=WHEN] <b></b>
+              control clone/CoW copies. See below
+
+              <p>   --remove-destination <br>
+              remove each existing destination file before  attempt‐
+              ing to open it (contrast with --force)
+
+              <p>   --sparse=WHEN <br>
+              control creation of sparse files. See below
+
+              <p>   --strip-trailing-slashes <br>
+              remove any trailing slashes from each SOURCE argument
+
+              <p>   -s, --symbolic-link <br>
+              make symbolic links instead of copying
+
+              <p>   -S, --suffix=SUFFIX <br>
+              override the usual backup suffix
+
+              <p>    -t, --target-directory=DIRECTORY
+              copy all SOURCE arguments into DIRECTORY
+
+              <p>    -T, --no-target-directory <br>
+              treat DEST as a normal file
+
+              <p>   -u, --update <br>
+              copy  only when the SOURCE file is newer than the des‐
+              tination file or when the destination file is missing
+
+              <p>    -v, --verbose <br>
+              explain what is being done
+
+              <p>     -x, --one-file-system <br>
+              stay on this file system
+
+              <p>   -Z     set SELinux security context of  destination  file  to
+              default type
+
+              <p>   --context[=CTX] <br>
+              like  -Z,  or if CTX is specified then set the SELinux
+              or SMACK security context to CTX
+
+              <p>  --help display this help and exit
+
+                <p>    --version <br>
+              output version information and exit
+
+              <p>    By default, sparse SOURCE  files  are  detected  by  a  crude
+       heuristic  and  the corresponding DEST file is made sparse as
+       well.  That is the behavior selected by --sparse=auto.  Spec‐
+       ify --sparse=always to create a sparse DEST file whenever the
+       SOURCE file contains a long enough sequence  of  zero  bytes.
+       Use --sparse=never to inhibit creation of sparse files.
+
+       <p>   When  --reflink[=always]  is specified, perform a lightweight
+       copy, where the data blocks are copied  only  when  modified.
+       If  this is not possible the copy fails, or if --reflink=auto
+       is specified, fall  back  to  a  standard  copy.   Use  --re‐
+       flink=never to ensure a standard copy is performed.
+
+       <p>   The  backup  suffix  is '~', unless set with --suffix or SIM‐
+       PLE_BACKUP_SUFFIX.  The version control  method  may  be  se‐
+       lected via the --backup option or through the VERSION_CONTROL
+       environment variable.  Here are the values:
+
+       <p>   none, off
+              never make backups (even if --backup is given)
+
+              <p>   numbered, t <br>
+              make numbered backups
+
+              <p>   existing, nil <br>
+              numbered if numbered backups exist, simple otherwise
+
+              <p>   simple, never <br>
+              always make simple backups
+
+              <p>   As a special case, cp makes a backup of SOURCE when the force
+       and backup options are given and SOURCE and DEST are the same
+       name for an existing, regular file.
+
+       <p> AUTHOR <br>
+       Written by Torbjorn Granlund, David MacKenzie, and Jim Meyer‐
+       ing.
+
+       <p> REPORTING BUGS <br>
+       GNU   coreutils   online   help:   <https://www.gnu.org/soft‐
+       ware/coreutils/>
+       Report  any  translation  bugs  to   <https://translationpro‐
+       ject.org/team/>
+
+       <p> COPYRIGHT <br>
+       Copyright  ©  2020  Free  Software  Foundation, Inc.  License
+       GPLv3+: GNU  GPL  version  3  or  later  <https://gnu.org/li‐
+       censes/gpl.html>.
+       This  is  free  software:  you  are free to change and redis‐
+       tribute it.  There is NO WARRANTY, to the extent permitted by
+       law.
+
+       <p> SEE ALSO <br>
+       Full     documentation    <https://www.gnu.org/software/core‐
+       utils/cp>
+       or available locally via: info '(coreutils) cp invocation'
+     
+<br>
+<br>
+
+
+
+
+    </div>
+   
+</div>
+
+</body>
+</html>

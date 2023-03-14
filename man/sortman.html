@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="header">
+    <div class="hb">
+         <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+            <ul class="navbar">
+                <li><a href="../index.html">Pocetna</a></li>
+            </ul>
+
+    </div>
+</div>
+    
+
+<div class="section-ls">
+    
+    <div class="naslov1">
+
+        
+
+      <div class="man"> <b><p>sort(1) - man page</p> </b> </div>
+<br>
+<br>
+<p>NAME <br>
+       sort - sort lines of text files
+
+<p>SYNOPSIS <br>
+       sort [OPTION]... [FILE]... <br>
+       sort [OPTION]... --files0-from=F
+
+<p>DESCRIPTION <br>
+       Write sorted concatenation of all FILE(s) to standard output.
+
+       With no FILE, or when FILE is -, read standard input.
+
+    <p>   Mandatory  arguments  to long options are mandatory for short
+       options too.  Ordering options:
+
+    <p>   -b, --ignore-leading-blanks <br>
+              ignore leading blanks
+
+    <p>   -d, --dictionary-order <br>
+              consider only blanks and alphanumeric characters
+
+     <p>  -f, --ignore-case <br>
+              fold lower case to upper case characters
+
+    <p>   -g, --general-numeric-sort <br>
+              compare according to general numerical value
+
+     <p>  -i, --ignore-nonprinting <br>
+              consider only printable characters
+
+     <p>  -M, --month-sort <br>
+              compare (unknown) < 'JAN' < ... < 'DEC'
+
+     <p>  -h, --human-numeric-sort <br>
+              compare human readable numbers (e.g., 2K 1G)
+
+     <p>  -n, --numeric-sort <br>
+              compare according to string numerical value
+
+    <p>   -R, --random-sort <br>
+              shuffle, but group identical keys.  See shuf(1)
+
+     <p>  --random-source=FILE <br>
+              get random bytes from FILE
+
+     <p>  -r, --reverse <br>
+              reverse the result of comparisons
+
+     <p>  --sort=WORD <br>
+              sort according to WORD: general-numeric -g,  human-nu‐
+              meric -h, month -M, numeric -n, random -R, version -V
+
+     <p>  -V, --version-sort <br>
+              natural sort of (version) numbers within text
+
+    <p>   Other options:
+
+     <p>  --batch-size=NMERGE <br>
+              merge at most NMERGE inputs at once; for more use temp
+              files
+
+     <p>  -c, --check, --check=diagnose-first <br>
+              check for sorted input; do not sort
+
+     <p>  -C, --check=quiet, --check=silent <br>
+              like -c, but do not report first bad line
+
+     <p>  --compress-program=PROG <br>
+              compress temporaries with PROG; decompress  them  with
+              PROG -d
+
+     <p>  --debug <br>
+              annotate  the  part of the line used to sort, and warn
+              about questionable usage to stderr
+
+    <p>   --files0-from=F <br>
+              read input from the files specified by  NUL-terminated
+              names  in file F; If F is - then read names from stan‐
+              dard input
+
+    <p>   -k, --key=KEYDEF <br>
+              sort via a key; KEYDEF gives location and type
+
+     <p>  -m, --merge <br>
+              merge already sorted files; do not sort
+
+     <p>  -o, --output=FILE <br>
+              write result to FILE instead of standard output
+
+   <p>    -s, --stable <br>
+              stabilize sort by disabling last-resort comparison
+
+    <p>   -S, --buffer-size=SIZE <br>
+              use SIZE for main memory buffer
+
+     <p>  -t, --field-separator=SEP <br>
+              use SEP instead of non-blank to blank transition
+
+     <p>  -T, --temporary-directory=DIR <br>
+              use DIR for temporaries, not $TMPDIR or /tmp; multiple
+              options specify multiple directories
+
+     <p>  --parallel=N <br>
+              change the number of sorts run concurrently to N
+
+    <p>   -u, --unique <br>
+              with -c, check for strict ordering; without -c, output
+              only the first of an equal run
+
+    <p>   -z, --zero-terminated <br>
+              line delimiter is NUL, not newline
+
+   <p>    --help display this help and exit
+
+   <p>    --version <br>
+              output version information and exit
+
+     <p>  KEYDEF is F[.C][OPTS][,F[.C][OPTS]] for start and stop  posi‐
+       tion, where F is a field number and C a character position in
+       the field; both are origin 1, and the stop position  defaults
+       to  the line's end.  If neither -t nor -b is in effect, char‐
+       acters in a field are counted from the beginning of the  pre‐
+       ceding  whitespace.  OPTS is one or more single-letter order‐
+       ing options [bdfgiMhnRrV], which override global ordering op‐
+       tions  for that key.  If no key is given, use the entire line
+       as the key.  Use --debug to diagnose incorrect key usage.
+
+     <p>  SIZE may be followed by  the  following  multiplicative  suf‐
+       fixes:  %  1% of memory, b 1, K 1024 (default), and so on for
+       M, G, T, P, E, Z, Y.
+
+    <p>   *** WARNING *** The locale specified by the  environment  af‐
+       fects  sort  order.  Set LC_ALL=C to get the traditional sort
+       order that uses native byte values.
+
+<p>AUTHOR <br>
+       Written by Mike Haertel and Paul Eggert.
+
+<p>REPORTING BUGS <br>
+       GNU   coreutils   online   help:   <https://www.gnu.org/soft‐
+       ware/coreutils/>
+       Report   any  translation  bugs  to  <https://translationpro‐
+       ject.org/team/>
+
+<p>COPYRIGHT <br>
+       Copyright © 2020  Free  Software  Foundation,  Inc.   License
+       GPLv3+:  GNU  GPL  version  3  or  later <https://gnu.org/li‐
+       censes/gpl.html>.
+       This is free software: you are  free  to  change  and  redis‐
+       tribute it.  There is NO WARRANTY, to the extent permitted by
+       law.
+
+<p>SEE ALSO <br>
+       shuf(1), uniq(1)
+
+       Full    documentation     <https://www.gnu.org/software/core‐
+       utils/sort>
+       or available locally via: info '(coreutils) sort invocation'
+
+
+    
+   
+</div>
+
+</div>
+<script src="../app.js"></script>
+
+</body>
+</html>

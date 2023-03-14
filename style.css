@@ -9,6 +9,8 @@
     text-decoration: none;
     list-style: none;
     
+   
+    
 }
 
 .header .hb .navbar{
@@ -85,8 +87,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 80px;
+    padding-bottom: px;
     
 
   
@@ -101,14 +103,15 @@ body {
 }
 
 .start1 p {
+    color: rgba(255, 255, 255, 0.493);
     padding-top: 30px;
     display: flex;
    align-items: center;
    justify-content: center;
    background-color: none;
-   font-size: 33px;
-   font-family: Cabin, sans-serif,  !important;
-   color: rgba(255, 255, 255, 0.493);
+   font-size: 30px;
+   font-family: Cabin, sans-serif,
+   
 
 }
 
@@ -122,13 +125,13 @@ body {
 }
 
  .start p {
-     padding-top: 80px;
+     padding-top: 30px;
      display: flex;
     align-items: center;
     justify-content: center;
     background-color: none;
-    font-size: 33px;
-    font-family: Cabin, sans-serif,  !important;
+    font-size: 30px;
+    font-family: Cabin, sans-serif;
     color: white; 
     
 }
@@ -179,22 +182,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 140px 17%;
-    font-size: 20px;
+    padding: 150px 17%;
+    font-size: 22px;
     color: white;
-    
-   
+
+    font-family: Cabin-regular, sans-serif;   
    
 } 
 
 #ls {
-    font-size: 36px;
+    font-size: 37px;
    color: white;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+     align-items: flex-end; 
+    justify-content: flex-start;
     cursor: pointer;
-   
+    padding-bottom: 20px;
+  
 
 
 }
@@ -204,6 +208,7 @@ body {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.493); 
     color: white;
+    font-family: Cabin, sans-serif; 
    
     
    
@@ -242,12 +247,12 @@ body {
     padding-bottom: 4px;
 
  }
-
+/* 
 .tekst {
-    padding-top:30px;
+    padding-top:5px;
    
    
-}
+} */
 
 
 
@@ -268,9 +273,9 @@ body {
 }
 
 p {
-    padding-top:  12px;
-    padding-bottom: 12px;
-    
+    padding-top:  8px;
+    padding-bottom: 8px;
+   
 }
 
 .pic {
@@ -290,8 +295,139 @@ p {
     cursor: pointer;
 }
 
+.textbtn span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
 
+.textbtn span p {
+    padding-right:0;
+}
+
+ 
 
 .primer .textbtn img:hover {
     width: 31px;
 }
+
+.box1 p{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    padding-bottom: 2px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+
+#manpage {
+    color: rgba(255, 255, 255, 0.493);
+    font-size: 22px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+   
+   
+}
+
+#manpage:hover {
+    color: white;
+}
+
+.start2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 80px;
+    margin: auto;
+   
+   
+   
+}
+
+.start1 {
+    color: rgba(255, 255, 255, 0.493)
+}
+
+
+   .naslov1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column; 
+     /* border: 1px solid rgba(255, 255, 255, 0.493);  */
+    /* padding: 30px; */
+    background-color: #266075;
+    color: white;
+    font-family: Cabin-regular, sans-serif;
+  padding: 20px 12%;
+  
+   
+    
+   }
+
+
+.naslov1 p {
+    font-size: 22px;
+    /* padding: 4px; */
+    padding-top: 8px;
+    padding-bottom: 12px;
+    font-family: Cabin, sans-serif;
+    color: white;
+    
+}
+
+   
+   
+   .naslov1 a {
+    color: rgba(255, 255, 255, 0.493);
+   
+
+   }
+   
+   .naslov1 a:hover {
+    color: white;
+   }
+
+   
+    
+
+
+.man {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    color: white;
+    /* border: 1px solid #266075;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.493); */
+    
+
+   
+    
+}
+
+.man p {
+    font-size: 26px;
+   color: rgba(255, 255, 255, 0.493)
+   
+}
+
+.man1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+}
+

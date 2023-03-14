@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="header">
+    <div class="hb">
+         <a href="#" class="logo"><img src="../icons/logo.svg" alt=""></a>
+
+            <ul class="navbar">
+                <li><a href="../index.html">Pocetna</a></li>
+            </ul>
+
+    </div>
+</div>
+    
+
+<div class="section-ls">
+    
+    <div class="naslov1">
+
+        
+
+      <div class="man">  <b><p>df(1) - man page</p></b>                   </div>
+      
+
+<br>
+<br>
+   
+
+<p> NAME <br>
+       df - report file system disk space usage
+
+       <p>SYNOPSIS <br>
+       df [OPTION]... [FILE]...
+
+       <p>DESCRIPTION <br>
+       This  manual  page  documents the GNU version of df.  df dis‐
+       plays the amount of disk space available on the  file  system
+       containing  each  file  name  argument.   If  no file name is
+       given, the space available on all currently mounted file sys‐
+       tems  is shown.  Disk space is shown in 1K blocks by default,
+       unless the environment variable POSIXLY_CORRECT  is  set,  in
+       which case 512-byte blocks are used.
+
+       <p>   If  an  argument  is  the absolute file name of a disk device
+       node containing a mounted file system,  df  shows  the  space
+       available  on that file system rather than on the file system
+       containing the device node.  This version of df  cannot  show
+       the  space  available  on  unmounted file systems, because on
+       most kinds of systems doing so requires very nonportable  in‐
+       timate knowledge of file system structures.
+
+       <p>OPTIONS <br>
+       Show information about the file system on which each FILE re‐
+       sides, or all file systems by default.
+
+     <p>  Mandatory arguments to long options are mandatory  for  short
+       options too.
+
+       <p>  -a, --all
+              include pseudo, duplicate, inaccessible file systems
+
+              <p>  -B, --block-size=SIZE <br>
+              scale  sizes by SIZE before printing them; e.g., '-BM'
+              prints sizes in units of  1,048,576  bytes;  see  SIZE
+              format below
+
+              <p> -h, --human-readable <br>
+              print sizes in powers of 1024 (e.g., 1023M)
+
+              <p>  -H, --si <br>
+              print sizes in powers of 1000 (e.g., 1.1G)
+
+              <p>  -i, --inodes <br>
+              list inode information instead of block usage
+
+              <p>  -k     like --block-size=1K
+
+                <p> -l, --local <br>
+              limit listing to local file systems
+
+              <p>  --no-sync <br>
+              do not invoke sync before getting usage info (default)
+
+              <p>  --output[=FIELD_LIST] <br>
+              use  the output format defined by FIELD_LIST, or print
+              all fields if FIELD_LIST is omitted.
+
+              <p>  -P, --portability <br>
+              use the POSIX output format
+
+              <p>  --sync invoke sync before getting usage info
+
+                <p>  --total <br>
+              elide all entries insignificant  to  available  space,
+              and produce a grand total
+
+              <p>  -t, --type=TYPE <br>
+              limit listing to file systems of type TYPE
+
+              <p> -T, --print-type <br>
+              print file system type
+
+              <p>  -x, --exclude-type=TYPE <br>
+              limit listing to file systems not of type TYPE
+
+              <p>  -v     (ignored) <br>
+
+                <p>  --help display this help and exit
+
+                    <p>  --version <br>
+              output version information and exit
+
+              <p> Display  values are in units of the first available SIZE from
+       --block-size, and the DF_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE
+       environment  variables.   Otherwise,  units  default  to 1024
+       bytes (or 512 if POSIXLY_CORRECT is set).
+
+       <p> The SIZE argument is an integer and optional  unit  (example:
+       10K  is 10*1024).  Units are K,M,G,T,P,E,Z,Y (powers of 1024)
+       or KB,MB,... (powers of 1000).  Binary prefixes can be  used,
+       too: KiB=K, MiB=M, and so on.
+
+       <p>  FIELD_LIST  is  a  comma-separated  list of columns to be in‐
+       cluded.  Valid field names are: 'source', 'fstype', 'itotal',
+       'iused',   'iavail',   'ipcent',   'size',  'used',  'avail',
+       'pcent', 'file' and 'target' (see info page).
+
+       <p>AUTHOR <br>
+       Written by Torbjorn Granlund, David MacKenzie, and  Paul  Eg‐
+       gert.
+
+       <p>REPORTING BUGS <br>
+       GNU   coreutils   online   help:   <https://www.gnu.org/soft‐
+       ware/coreutils/>
+       Report  any  translation  bugs  to   <https://translationpro‐
+       ject.org/team/>
+
+       <p>COPYRIGHT <br>
+       Copyright  ©  2020  Free  Software  Foundation, Inc.  License
+       GPLv3+: GNU  GPL  version  3  or  later  <https://gnu.org/li‐
+       censes/gpl.html>.
+       This  is  free  software:  you  are free to change and redis‐
+       tribute it.  There is NO WARRANTY, to the extent permitted by
+       law.
+
+       <p>SEE ALSO <br>
+       Full     documentation    <https://www.gnu.org/software/core‐
+       utils/df>
+       or available locally via: info '(coreutils) df invocation'
+
+       <p>GNU coreutils 8.32          February 2022                      DF(1)
+   
+</div>
+
+</div>
+
+<script src="../app.js"></script>
+
+</body>
+</html>
