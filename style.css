@@ -131,7 +131,7 @@ body {
     justify-content: center;
     background-color: none;
     font-size: 30px;
-    font-family: Cabin, sans-serif;
+    font-family: Cabin-regular, sans-serif;
     color: white; 
     
 }
@@ -182,7 +182,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 150px 17%;
+    padding: 150px 18%;
     font-size: 22px;
     color: white;
 
@@ -197,7 +197,7 @@ body {
      align-items: flex-end; 
     justify-content: flex-start;
     cursor: pointer;
-    padding-bottom: 20px;
+    padding-bottom: 5px; 
   
 
 
@@ -225,6 +225,9 @@ body {
     padding-bottom: 12px;
     padding-left: 6px;
     padding-right: 6px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  
     
 
  }
@@ -245,6 +248,8 @@ body {
     padding-top: 4px;
     padding-left: 10px;
     padding-bottom: 4px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
 
  }
 /* 
@@ -275,6 +280,10 @@ body {
 p {
     padding-top:  8px;
     padding-bottom: 8px;
+    font-family: Cabin-regular, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color:  rgba(255, 255, 255, 0.8);
    
 }
 
@@ -357,31 +366,17 @@ p {
     color: rgba(255, 255, 255, 0.493)
 }
 
+ 
 
-   .naslov1 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column; 
-     /* border: 1px solid rgba(255, 255, 255, 0.493);  */
-    /* padding: 30px; */
-    background-color: #266075;
-    color: white;
-    font-family: Cabin-regular, sans-serif;
-  padding: 20px 12%;
-  
-   
-    
-   }
 
 
 .naslov1 p {
-    font-size: 22px;
-    /* padding: 4px; */
+    font-size: 18px;
     padding-top: 8px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
     font-family: Cabin, sans-serif;
-    color: white;
+    color:  rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
     
 }
 
@@ -405,21 +400,20 @@ p {
    
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: static;
-    color: white;
-    /* border: 1px solid #266075;
-    padding: 2px;
-    background-color: rgba(255, 255, 255, 0.493); */
+    justify-content: flex-start;
     
+    color: white;
+   
 
    
     
 }
 
 .man p {
-    font-size: 26px;
-   color: rgba(255, 255, 255, 0.493)
+    font-size: 20px;
+    color: white;
+   
+   
    
 }
 
@@ -431,3 +425,8 @@ p {
     font-size: 26px;
 }
 
+
+/* .section-ls .naslov1 {
+    padding: 20px;
+   
+} */

@@ -30,14 +30,17 @@
            <div class="naslov">
 
                 <h1 id="ls">chmod<a id="manpage" href="../man/chmodman.html">man</a></h1>
-
+<hr>
                     <br>
+                    <br>
+                    <br>
+                  
 
                     <p class="tekst">Komanda chmod omogucava vam da promenite dozvole za pristup fajlovima i fasciklama.
 
-                        Komanda chmod, kao i druge komande, može se izvrsiti iz komandne linije ili preko datoteke </p>
+                        Komanda chmod, kao i druge komande, moze se izvrsiti iz komandne linije ili preko datoteke </p>
 
-                    <br>
+                
 
                     <p>Ovo je ispravna sintaksa kada koristite chmod naredbu:</p>
 
@@ -61,14 +64,14 @@
                     </p>
             <br>
 
-            <p>Ispod je lista nekoliko numeričkih dozvola koje se mogu postaviti za korisnika, grupu i sve ostale na računaru. Pored broja je ekvivalentno čitanje / pisanje / izvršenje.</p>
+            <p>Ispod je lista nekoliko numerickih dozvola koje se mogu postaviti za korisnika, grupu i sve ostale na racunaru. Pored broja je ekvivalentno citanje / pisanje / izvrsenje.</p>
 
 <br>
-                       <b>7,rwx </b>,citati, pisati i izvršiti <br>
+                       <b>7,rwx </b>,citati, pisati i izvrsiti <br>
                        <b>6, rw-</b>, citati i pisati <br>
                       <b> 5, rx</b>, citati i izvrsiti <br>
                       <b>4, r--</b> , samo za citanje <br>
-                      <b>3, -wx</b>, pisati i izvršiti <br>
+                      <b>3, -wx</b>, pisati i izvrsiti <br>
                       <b>2, -w-</b>, samo pisite <br>
                       <b>1, --x</b>, samo izvrsi <br>
                       <b>0, ---,</b> nema 
@@ -86,17 +89,17 @@
                <p>Prvi 7 postavlja dozvole za korisnika, drugi 7 postavlja dozvole za grupu, a treći 7 postavlja dozvole za sve ostale.</p>
                   <br>
 
-               <p>Ako želite biti jedini koji može pristupiti njemu, koristićete</p>
+               <p>Ako zelite biti jedini koji moze pristupiti njemu, koristicete</p>
                <div class="primer">
-                <div class="textbtn">
-                <p id="text39">$ chmod 700 dat1</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text39')">
+                <div class="textbtn"><span><p>$</p>
+                <p id="text39">chmod 700 dat1</p></span><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text39')">
                </div> 
              </div>
                <br>
                <p>Da biste sebi i svojim clanovima dali potpuni pristup</p>
                <div class="primer">
-                <div class="textbtn">
-                <p id="text40">$ chmod 770 dat1</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text40')">
+                <div class="textbtn"><span><p>$</p>
+                <p id="text40">chmod 770 dat1</p></span><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text40')">
                </div> 
              </div>
 
@@ -104,16 +107,16 @@
                <p>Ako zelite zadrzati pun pristup za sebe, ali zelite zadrzati druge ljude da menjaju datoteku, mozete koristiti:</p>
 
                <div class="primer">
-                <div class="textbtn">
-                <p id="text41">$ chmod 755 dat1</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text41')">
+                <div class="textbtn"><span><p>$</p>
+                <p id="text41">chmod 755 dat1</p></span><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text41')">
                </div> 
              </div>
 
     <br>
                  <p>Sledece se koriste slova s gornjih stranica kako bi se promenile dozvole "dat1" tako da vlasnik moze citati i pisati u datoteku, ali ne dozvoljava bilo kog drugog:</p>
                  <div class="primer">
-                    <div class="textbtn">
-                    <p id="text42">$ chmod u = rw dat1</p><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text42')">
+                    <div class="textbtn"><span><p>$</p>
+                    <p id="text42">chmod u = rw dat1</p></span><img src="../icons/icons8-clone-figure-32.png" alt="" onclick="copy('text42')">
                    </div> 
                  </div>
                 
