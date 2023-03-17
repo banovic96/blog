@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@300;400&family=Poppins:wght@600&family=Roboto:ital,wght@0,500;1,500&display=swap');
 
 
+
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -9,9 +13,8 @@
     text-decoration: none;
     list-style: none;
     
-   
-    
 }
+
 
 .header .hb .navbar{
   
@@ -20,11 +23,14 @@
     justify-content: space-between;
 }
 
+
+
 body {
     background-color: #266075; 
     font-family: Cabin, sans-serif;
     
 }
+
 
 
 .header {
@@ -98,8 +104,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding-top: 30px;
-    padding-bottom: 10px; */
+   
 }
 
 .start1 p {
@@ -145,8 +150,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    /* padding-bottom:; */
-    
+   
     
     
 }  
@@ -252,12 +256,7 @@ body {
     letter-spacing: 0.5px;
 
  }
-/* 
-.tekst {
-    padding-top:5px;
-   
-   
-} */
+
 
 
 
@@ -304,12 +303,16 @@ p {
     cursor: pointer;
 }
 
+
+
 .textbtn span {
     display: flex;
     align-items: center;
     justify-content: flex-start;
    
 }
+
+
 
 .textbtn span p {
     padding-right:0;
@@ -320,6 +323,8 @@ p {
 .primer .textbtn img:hover {
     width: 31px;
 }
+
+
 
 .box1 p{
     font-size: 24px;
@@ -349,6 +354,8 @@ p {
     color: white;
 }
 
+
+
 .start2 {
     display: flex;
     align-items: center;
@@ -361,6 +368,8 @@ p {
    
    
 }
+
+
 
 .start1 {
     color: rgba(255, 255, 255, 0.493)
@@ -382,26 +391,25 @@ p {
 
    
    
-   .naslov1 a {
+.naslov1 a {
     color: rgba(255, 255, 255, 0.493);
    
 
    }
    
-   .naslov1 a:hover {
+
+
+.naslov1 a:hover {
     color: white;
    }
 
+
    
-    
-
-
 .man {
    
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
     color: white;
    
 
@@ -410,23 +418,9 @@ p {
 }
 
 .man p {
-    font-size: 20px;
+    font-size: 24px;
     color: white;
    
    
    
 }
-
-.man1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 26px;
-}
-
-
-/* .section-ls .naslov1 {
-    padding: 20px;
-   
-} */

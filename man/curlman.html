@@ -288,7 +288,7 @@
 
               <p>     Used together with -u, --user.
 
-              Example:
+                <p>   Example:
                curl --anyauth --user me:pwd https://example.com
 
               See also --proxy-anyauth, --basic and --digest.
@@ -300,7 +300,7 @@
               Note that this flag is ignored by  some  SFTP  servers
               (including OpenSSH).
 
-              Example:
+              <p>   Example:
                curl --upload-file local --append ftp://example.com/
 
               See also -r, --range and -C, --continue-at.
@@ -338,15 +338,9 @@
               <p>Example:
                curl -u name:password --basic https://example.com
 
-              See also --proxy-basic.
+               <p>  See also --proxy-basic.
 
-              <p>    --cacert 
-              (TLS) Tells curl to use the specified certificate file
-              to  verify  the peer. The file may contain multiple CA
-              certificates. The certificate(s) must be in  PEM  for‐
-              mat.  Normally curl is built to use a default file for
-              this, so this option is typically used to  alter  that
-              default file.
+              
 
               <p>   curl   recognizes   the   environment  variable  named
               'CURL_CA_BUNDLE' if it is set, and uses the given path
@@ -386,7 +380,7 @@
               See also --capath and -k, --insecure.
 
               <p> --capath <dir>
-              (TLS)  Tells curl to use the specified certificate di‐
+                <p>   (TLS)  Tells curl to use the specified certificate di‐
               rectory to verify the peer. Multiple paths can be pro‐
               vided    by    separating    them   with   ":"   (e.g.
               "path1:path2:path3"). The certificates must be in  PEM
@@ -463,7 +457,6 @@
               word delimiter. If the nickname contains "\", it needs
               to be escaped as "\\" so that it is not recognized  as
               an escape character.
-
               <p>   If  curl is built against OpenSSL library, and the en‐
               gine pkcs11 is available,  then  a  PKCS#11  URI  (RFC
               7512)  can be used to specify a certificate located in
@@ -472,6 +465,7 @@
               is provided, then the --engine option will be  set  as
               "pkcs11"  if none was provided and the --cert-type op‐
               tion will be set as "ENG" if none was provided.
+
 
               <p>  (iOS and macOS only) If curl is built  against  Secure
               Transport,  then  the certificate string can either be
@@ -498,7 +492,7 @@
               If this option is used several  times,  the  last  one
               will be used.
 
-              Example:
+              <p>   Example:
                curl --cert certfile --key keyfile https://example.com
 
               See also --cert-type, --key and --key-type.
@@ -513,7 +507,7 @@
                <p> If  this  option  is  used several times, the last one
               will be used.
 
-              Example:
+              <p>  Example:
                curl --ciphers ECDHE-ECDSA-AES256-CCM8 https://example.com
 
                <p>See also --tlsv1.3.
@@ -526,7 +520,7 @@
               <p> Example:
                curl --compressed-ssh sftp://example.com/
 
-              See also --compressed. Added in 7.56.0.
+               <p>  See also --compressed. Added in 7.56.0.
 
               <p>  --compressed
               (HTTP) Request a compressed response using one of  the
@@ -538,7 +532,7 @@
               request, not an order; the server may or may  not  de‐
               liver data compressed.
 
-              Example:
+              <p>    Example:
                curl --compressed https://example.com
 
               See also --compressed-ssh.
@@ -578,18 +572,18 @@
               and not by simply writing the URL on its own line. So,
               it could look similar to this:
 
-              url = "https://curl.se/docs/"
+              <p>  url = "https://curl.se/docs/"
 
-               # --- Example file ---
-               # this is a comment
+                <p>    # --- Example file ---
+                    <p>   # this is a comment
                url = "example.com"
                output = "curlhere.html"
                user-agent = "superagent/1.0"
 
-               # and fetch another URL too
+               <p>    # and fetch another URL too
                url = "example.com/docs/manpage.html"
                -O
-               referer = "http://nowhereatall.example.com/"
+               <p>    referer = "http://nowhereatall.example.com/"
                # --- End of example file ---
 
                <p>    When  curl  is  invoked,  it  (unless -q, --disable is
@@ -676,14 +670,14 @@
               nation. If used with uploads, the FTP  server  command
               SIZE will not be used by curl.
 
-              Use  "-C  -"  to  tell  curl to automatically find out
+              <p>   Use  "-C  -"  to  tell  curl to automatically find out
               where/how to resume the transfer.  It  then  uses  the
               given output/input files to figure that out.
 
-              If  this  option  is  used several times, the last one
+              <p>   If  this  option  is  used several times, the last one
               will be used.
 
-              Examples:
+              <p>   Examples:
                curl -C - https://example.com
                curl -C 400 https://example.com
 
@@ -927,12 +921,12 @@
                      name is expected to be URL-encoded already.
 
                      <p>   Examples:
-        curl --data-urlencode name=val https://example.com
-        curl --data-urlencode =encodethis https://example.com
-        curl --data-urlencode name@file https://example.com
-        curl --data-urlencode @fileonly https://example.com
+                        <p>   curl --data-urlencode name=val https://example.com
+                            <p>    curl --data-urlencode =encodethis https://example.com
+                                <p>    curl --data-urlencode name@file https://example.com
+                                    <p>    curl --data-urlencode @fileonly https://example.com
 
-       See also -d, --data and --data-raw.
+        <p>   See also -d, --data and --data-raw.
 
      <p>
        -d, --data <data>
@@ -1022,38 +1016,38 @@
               servers, but they enable more functionality in a  bet‐
               ter way than the traditional PORT command.
 
-              --eprt can be used to explicitly enable EPRT again and
+              <p>   --eprt can be used to explicitly enable EPRT again and
               --no-eprt is an alias for --disable-eprt.
 
-              If the server is accessed using IPv6, this option will
+              <p>    If the server is accessed using IPv6, this option will
               have no effect as EPRT is necessary then.
 
-              Disabling  EPRT  only  changes the active behavior. If
+              <p>   Disabling  EPRT  only  changes the active behavior. If
               you want to switch to passive mode you need to not use
               -P, --ftp-port or force it with --ftp-pasv.
 
-              Example:
+              <p>    Example:
                curl --disable-eprt ftp://example.com/
 
-              See also --disable-epsv and -P, --ftp-port.
+               <p>    See also --disable-epsv and -P, --ftp-port.
 
               <p>  --disable-epsv
-              (FTP) Tell curl to disable the use of the EPSV command
+                <p>   (FTP) Tell curl to disable the use of the EPSV command
               when doing passive FTP transfers. Curl  will  normally
               always first attempt to use EPSV before PASV, but with
               this option, it will not try using EPSV.
 
-              --epsv can be used to explicitly enable EPSV again and
+              <p>   --epsv can be used to explicitly enable EPSV again and
               --no-epsv is an alias for --disable-epsv.
 
-              If  the  server is an IPv6 host, this option will have
+              <p>   If  the  server is an IPv6 host, this option will have
               no effect as EPSV is necessary then.
 
-              Disabling EPSV only changes the passive  behavior.  If
+              <p>  Disabling EPSV only changes the passive  behavior.  If
               you  want to switch to active mode you need to use -P,
               --ftp-port.
 
-              Example:
+              <p>    Example:
                curl --disable-epsv ftp://example.com/
 
               See also --disable-eprt and -P, --ftp-port.
@@ -1098,11 +1092,11 @@
               from this address. The argument  should  be  a  single
               IPv4 address.
 
-              If  this  option  is  used several times, the last one
+              <p>  If  this  option  is  used several times, the last one
               will be used.
 
-              Example:
-               curl --dns-ipv4-addr 10.1.2.3 https://example.com
+              <p>  Example:
+                <p>   curl --dns-ipv4-addr 10.1.2.3 https://example.com
 
               See also --dns-interface and  --dns-ipv6-addr.  --dns-
               ipv4-addr  requires  that  the  underlying libcurl was
@@ -1182,13 +1176,13 @@
               specified file. If no headers are received, the use of
               this option will create an empty file.
 
-              When  used  in  FTP, the FTP server response lines are
+              <p>  When  used  in  FTP, the FTP server response lines are
               considered being "headers" and thus are saved there.
 
-              If this option is used several  times,  the  last  one
+              <p>  If this option is used several  times,  the  last  one
               will be used.
 
-              Example:
+              <p>   Example:
                curl --dump-header store.txt https://example.com
 
               See also -o, --output.
@@ -1198,10 +1192,10 @@
               Daemon socket. The socket is used to seed  the  random
               engine for SSL connections.
 
-              Example:
+              <p>  Example:
                curl --egd-file /random/here https://example.com
 
-              See also --random-file.
+               <p>   See also --random-file.
 
               <p>  --engine <name>
               (TLS)  Select the OpenSSL crypto engine to use for ci‐
@@ -1221,15 +1215,15 @@
               sending a custom If-None-Match header using the stored
               ETag.
 
-              For correct results, make sure that the specified file
+              <p>  For correct results, make sure that the specified file
               contains  only a single line with the desired ETag. An
               empty file is parsed as an empty ETag.
 
-              Use the option --etag-save to first save the ETag from
+              <p>    Use the option --etag-save to first save the ETag from
               a  response,  and  then  use  this  option  to compare
               against the saved ETag in a subsequent request.
 
-              Example:
+              <p>   Example:
                curl --etag-compare etag.txt https://example.com
 
               See also --etag-save and  -z,  --time-cond.  Added  in
@@ -1243,10 +1237,10 @@
               If  no  ETag  is  sent by the server, an empty file is
               created.
 
-              Example:
+              <p>   Example:
                curl --etag-save storetag.txt https://example.com
 
-              See also --etag-compare. Added in 7.68.0.
+               <p>   See also --etag-compare. Added in 7.68.0.
 
               <p>  --expect100-timeout <seconds>
               (HTTP) Maximum time in seconds that you allow curl  to
@@ -1302,7 +1296,7 @@
               to output and save that content but also to return er‐
               ror 22.
 
-              This  is  an  alternative  option  to -f, --fail which
+              <p>   This  is  an  alternative  option  to -f, --fail which
               makes curl fail for the same circumstances but without
               saving the content.
 
@@ -1311,7 +1305,7 @@
 
               See also -f, --fail. Added in 7.76.0.
 
-       -f, --fail
+              <p>     -f, --fail
               (HTTP)  Fail silently (no output at all) on server er‐
               rors. This is mostly done to  enable  scripts  etc  to
               better deal with failed attempts. In normal cases when
@@ -1320,17 +1314,17 @@
               scribes why and more). This  flag  will  prevent  curl
               from outputting that and return error 22.
 
-              This  method  is not fail-safe and there are occasions
+              <p>   This  method  is not fail-safe and there are occasions
               where non-successful response codes will slip through,
               especially  when  authentication is involved (response
               codes 401 and 407).
 
-              Example:
+              <p>   Example:
                curl --fail https://example.com
 
               See also --fail-with-body.
 
-       --false-start
+              <p>   --false-start
               (TLS) Tells curl to use false  start  during  the  TLS
               handshake.  False  start  is a mode where a TLS client
               will start sending application data  before  verifying
@@ -1370,17 +1364,17 @@
 
               See also -F, --form.
 
-       -F, --form <name=content>
+              <p>  -F, --form <name=content>
               (HTTP SMTP IMAP) For HTTP protocol family,  this  lets
               curl  emulate  a  filled-in  form  in which a user has
               pressed the submit button. This causes  curl  to  POST
               data  using  the  Content-Type multipart/form-data ac‐
               cording to RFC 2388.
 
-              For SMTP and IMAP protocols, this is the means to com‐
+              <p>  For SMTP and IMAP protocols, this is the means to com‐
               pose a multipart mail message to transmit.
 
-              This  enables  uploading of binary files etc. To force
+              <p>   This  enables  uploading of binary files etc. To force
               the 'content' part to be a file, prefix the file  name
               with  an  @  sign. To just get the content part from a
               file, prefix the file name with the symbol <. The dif‐
@@ -1389,7 +1383,7 @@
               makes  a text field and just get the contents for that
               text field from a file.
 
-              Tell curl to read content from stdin instead of a file
+              <p>  Tell curl to read content from stdin instead of a file
               by  using  -  as  filename. This goes for both @ and <
               constructs.  When  stdin  is  used,  the  contents  is
               buffered in memory first by curl to determine its size
@@ -1401,18 +1395,18 @@
               such  data  is  sent as chunks by HTTP and rejected by
               IMAP.
 
-              Example: send an image to an HTTP server, where  'pro‐
+              <p>   Example: send an image to an HTTP server, where  'pro‐
               file'  is the name of the form-field to which the file
               portrait.jpg will be the input:
 
-               curl -F profile=@portrait.jpg https://example.com/upload.cgi
+              <p>   curl -F profile=@portrait.jpg https://example.com/upload.cgi
 
-              Example: send your name and  shoe  size  in  two  text
+                <p>  Example: send your name and  shoe  size  in  two  text
               fields to the server:
 
-               curl -F name=John -F shoesize=11 https://example.com/
+              <p>  curl -F name=John -F shoesize=11 https://example.com/
 
-              Example:  send  your  essay  in  a  text  field to the
+               <p>  Example:  send  your  essay  in  a  text  field to the
               server. Send it as a plain text  field,  but  get  the
               contents for it from a local file:
 
@@ -1449,18 +1443,18 @@
               contains  semicolons, leading/trailing spaces or lead‐
               ing double quotes:
 
-               curl -F 'colors="red; green; blue";type=text/x-myapp' example.com
+              <p>    curl -F 'colors="red; green; blue";type=text/x-myapp' example.com
 
-              You can add custom headers to  the  field  by  setting
+                <p>    You can add custom headers to  the  field  by  setting
               headers=, like
 
-                curl -F "submit=OK;headers=\"X-submit-type: OK\"" example.com
+              <p>   curl -F "submit=OK;headers=\"X-submit-type: OK\"" example.com
 
               or
 
-                curl -F "submit=OK;headers=@headerfile" example.com
+              <p>   curl -F "submit=OK;headers=@headerfile" example.com
 
-              The  headers=  keyword  may  appear more that once and
+                <p>   The  headers=  keyword  may  appear more that once and
               above notes about quoting apply. When headers are read
               from  a  file, Empty lines and lines starting with '#'
               are comments and ignored; each header can be folded by
@@ -1469,14 +1463,14 @@
               trailing spaces are stripped.  Here is an example of a
               header file contents:
 
-                # This file contain two headers.
+              <p>  # This file contain two headers.
                 X-header-1: this is a header
 
-                # The following header is folded.
+                <p>   # The following header is folded.
                 X-header-2: this is
                  another header
 
-              To support sending multipart mail messages, the syntax
+                 <p>   To support sending multipart mail messages, the syntax
               is extended as follows:
               -  name  can  be  omitted: the equal sign is the first
               character of the argument,
@@ -1485,7 +1479,7 @@
               fication.
               - a multipart can be terminated with a '=)' argument.
 
-              Example: the following  command  sends  an  SMTP  mime
+              <p>  Example: the following  command  sends  an  SMTP  mime
               email  consisting in an inline part in two alternative
               formats: plain text and HTML. It attaches a text file:
 
@@ -1494,7 +1488,7 @@
                     -F '= <body>HTML message</body>;type=text/html' \
                     -F '=)' -F '=@textfile.txt' ...  smtp://example.com
 
-              Data can  be  encoded  for  transfer  using  encoder=.
+                    <p>   Data can  be  encoded  for  transfer  using  encoder=.
               Available  encodings are binary and 8bit that do noth‐
               ing else than adding the corresponding  Content-Trans‐
               fer-Encoding  header,  7bit  that  only  rejects 8-bit
@@ -1502,24 +1496,24 @@
               base64  that encodes data according to the correspond‐
               ing schemes, limiting lines length to 76 characters.
 
-              Example: send multipart mail with  a  quoted-printable
+              <p>     Example: send multipart mail with  a  quoted-printable
               text message and a base64 attached file:
 
                curl -F '=text message;encoder=quoted-printable' \
                     -F '=@localfile;encoder=base64' ... smtp://example.com
 
-              See further examples and details in the MANUAL.
+                    <p>  See further examples and details in the MANUAL.
 
-              This option can be used multiple times.
+                        <p>   This option can be used multiple times.
 
-              Example:
+                            <p>   Example:
                curl --form "name=curl" --form "file=@loadthis" https://example.com
 
               See  also -d, --data, --form-string and --form-escape.
               This option overrides -d, --data and  -I,  --head  and
               -T, --upload-file.
 
-       --ftp-account <data>
+              <p>   --ftp-account <data>
               (FTP) When an FTP server asks for "account data" after
               user name and password has been provided, this data is
               sent off using the ACCT command.
@@ -1532,7 +1526,7 @@
 
               See also -u, --user.
 
-       --ftp-alternative-to-user <command>
+              <p>   --ftp-alternative-to-user <command>
               (FTP) If authenticating with the USER  and  PASS  com‐
               mands  fails,  send  this command.  When connecting to
               Tumbleweed's Secure Transport server over FTPS using a
@@ -1561,39 +1555,39 @@
               file  on  an FTP(S) server. The method argument should
               be one of the following alternatives:
 
-              multicwd
+              <p>   multicwd
                      curl does a single CWD operation for each  path
                      part  in  the  given  URL. For deep hierarchies
                      this means many commands. This is how RFC  1738
                      says it should be done. This is the default but
                      the slowest behavior.
 
-              nocwd  curl does no CWD at all.  curl  will  do  SIZE,
+                     <p>   nocwd  curl does no CWD at all.  curl  will  do  SIZE,
                      RETR,  STOR  etc  and  give  a full path to the
                      server for all  these  commands.  This  is  the
                      fastest behavior.
 
-              singlecwd
+                     <p>   singlecwd
                      curl  does  one CWD with the full target direc‐
                      tory and then operates on the  file  "normally"
                      (like  in  the multicwd case). This is somewhat
                      more standards compliant than 'nocwd' but with‐
                      out the full penalty of 'multicwd'.
 
-       Examples:
+                     <p>  Examples:
         curl --ftp-method multicwd ftp://example.com/dir1/dir2/file
         curl --ftp-method nocwd ftp://example.com/dir1/dir2/file
         curl --ftp-method singlecwd ftp://example.com/dir1/dir2/file
 
-       See also -l, --list-only.
+        <p>  See also -l, --list-only.
 
-       --ftp-pasv
+            <p>  --ftp-pasv
               (FTP)  Use  passive mode for the data connection. Pas‐
               sive is the internal default behavior, but using  this
               option  can  be used to override a previous -P, --ftp-
               port option.
 
-              If this option is used several times, only  the  first
+              <p>   If this option is used several times, only  the  first
               one is used. Undoing an enforced passive really is not
               doable but you must then instead enforce  the  correct
               -P, --ftp-port again.
@@ -1601,12 +1595,12 @@
               Passive mode means that curl will try the EPSV command
               first and then PASV, unless --disable-epsv is used.
 
-              Example:
+              <p>   Example:
                curl --ftp-pasv ftp://example.com/
 
               See also --disable-epsv.
 
-       -P, --ftp-port <address>
+              <p>  -P, --ftp-port <address>
               (FTP) Reverses the  default  initiator/listener  roles
               when  connecting  with FTP. This option makes curl use
               active mode. curl then tells  the  server  to  connect
@@ -1653,7 +1647,7 @@
               quire this non-standard command for directory listings
               as well as up and downloads in PASV mode.
 
-              Example:
+              <p>   Example:
                curl --ftp-pret ftp://example.com/
 
               See also -P, --ftp-port and --ftp-pasv.
@@ -1670,12 +1664,12 @@
               This  option  has  no  effect if PORT, EPRT or EPSV is
               used instead of PASV.
 
-              Example:
+              <p>  Example:
                curl --ftp-skip-pasv-ip ftp://example.com/
 
               See also --ftp-pasv.
 
-       --ftp-ssl-ccc-mode <active/passive>
+              <p>    --ftp-ssl-ccc-mode <active/passive>
               (FTP) Sets the CCC mode. The  passive  mode  will  not
               initiate the shutdown, but instead wait for the server
               to do it, and will not reply to the shutdown from  the
@@ -1687,7 +1681,7 @@
 
               See also --ftp-ssl-ccc.
 
-       --ftp-ssl-ccc
+              <p>  --ftp-ssl-ccc
               (FTP) Use CCC (Clear Command Channel) Shuts  down  the
               SSL/TLS  layer  after  authenticating. The rest of the
               control channel  communication  will  be  unencrypted.
@@ -1699,7 +1693,7 @@
 
               See also --ssl and --ftp-ssl-ccc-mode.
 
-       --ftp-ssl-control
+              <p>   --ftp-ssl-control
               (FTP) Require SSL/TLS for the  FTP  login,  clear  for
               transfer.   Allows  secure authentication, but non-en‐
               crypted data  transfers  for  efficiency.   Fails  the
@@ -1710,7 +1704,7 @@
 
               See also --ssl.
 
-       -G, --get
+              <p>    -G, --get
               When  used,  this  option will make all data specified
               with -d, --data, --data-binary or --data-urlencode  to
               be used in an HTTP GET request instead of the POST re‐
@@ -1726,14 +1720,14 @@
               make  sense,  but  you should then instead enforce the
               alternative method you prefer.
 
-              Examples:
+              <p>  Examples:
                curl --get https://example.com
                curl --get -d "tool=curl" -d "age=old" https://example.com
                curl --get -I -d "tool=curl" https://example.com
 
               See also -d, --data and -X, --request.
 
-       -g, --globoff
+              <p>   -g, --globoff
               This option switches off the  "URL  globbing  parser".
               When  you  set  this option, you can specify URLs that
               contain the letters {}[] without  having  curl  itself
@@ -1741,12 +1735,12 @@
               legal URL contents but they should be encoded  accord‐
               ing to the URI standard.
 
-              Example:
+              <p>   Example:
                curl -g "https://example.com/{[]}}}}"
 
               See also -K, --config and -q, --disable.
 
-       --happy-eyeballs-timeout-ms <milliseconds>
+              <p>   --happy-eyeballs-timeout-ms <milliseconds>
               Happy  Eyeballs  is an algorithm that attempts to con‐
               nect to both IPv4 and IPv6  addresses  for  dual-stack
               hosts,  giving IPv6 a head-start of the specified num‐
@@ -1781,24 +1775,24 @@
               This option is primarily useful when sending test  re‐
               quests to a service that expects this header.
 
-              Example:
+              <p>     Example:
                curl --haproxy-protocol https://example.com
 
-              See also -x, --proxy. Added in 7.60.0.
+               <p>    See also -x, --proxy. Added in 7.60.0.
 
-       -I, --head
+                <p>    -I, --head
               (HTTP  FTP  FILE) Fetch the headers only! HTTP-servers
               feature the command HEAD which this uses to get  noth‐
               ing  but the header of a document. When used on an FTP
               or FILE file, curl displays the  file  size  and  last
               modification time only.
 
-              Example:
+              <p>       Example:
                curl -I https://example.com
 
               See also -G, --get, -v, --verbose and --trace-ascii.
 
-       -H, --header <header/@file>
+              <p>   -H, --header <header/@file>
               (HTTP)  Extra  header  to  include in the request when
               sending HTTP to a server. You may specify  any  number
               of extra headers. Note that if you should add a custom
@@ -1850,7 +1844,7 @@
 
               See also -A, --user-agent and -e, --referer.
 
-       -h, --help <category>
+              <p>   -h, --help <category>
               Usage help. This lists all commands of the <category>.
               If no arg was provided, curl will display the most im‐
               portant command line arguments.  If the argument "all"
@@ -1863,7 +1857,7 @@
 
               See also -v, --verbose.
 
-       --hostpubmd5 <md5>
+              <p>  --hostpubmd5 <md5>
               (SFTP SCP) Pass a  string  containing  32  hexadecimal
               digits.  The string should be the 128 bit MD5 checksum
               of the remote host's public key, curl will refuse  the
@@ -1874,7 +1868,7 @@
 
               See also --hostpubsha256.
 
-       --hostpubsha256 <sha256>
+              <p>   --hostpubsha256 <sha256>
               (SFTP  SCP)  Pass a string containing a Base64-encoded
               SHA256 hash of the remote host's public key. Curl will
               refuse  the connection with the host unless the hashes
@@ -1885,7 +1879,7 @@
 
               See also --hostpubmd5. Added in 7.80.0.
 
-       --hsts <file name>
+              <p>   --hsts <file name>
               (HTTPS) This option enables HSTS for the transfer.  If
               the  file  name points to an existing HSTS cache file,
               that will be used. After  a  completed  transfer,  the
@@ -2057,12 +2051,12 @@
 
               See also --proxy-insecure, --cacert and --capath.
 
-       --interface <name>
+              <p>    --interface <name>
               Perform  an operation using a specified interface. You
               can enter interface name, IP address or host name.  An
               example could look like:
 
-               curl --interface eth0:1 https://www.example.com/
+              <p>   curl --interface eth0:1 https://www.example.com/
 
               If  this  option  is  used several times, the last one
               will be used.
@@ -2078,17 +2072,17 @@
 
               See also --dns-interface.
 
-       -4, --ipv4
+              <p>   -4, --ipv4
               This option tells curl to resolve names  to  IPv4  ad‐
               dresses only, and not for example try IPv6.
 
-              Example:
+              <p>   Example:
                curl --ipv4 https://example.com
 
               See  also --http1.1 and --http2. This option overrides
               -6, --ipv6.
 
-       -6, --ipv6
+              <p>    -6, --ipv6
               This option tells curl to resolve names  to  IPv6  ad‐
               dresses only, and not for example try IPv4.
 
@@ -2148,7 +2142,7 @@
               order: '~/.ssh/id_rsa',  '~/.ssh/id_dsa',  './id_rsa',
               './id_dsa'.
 
-              If  curl is built against OpenSSL library, and the en‐
+              <p>    If  curl is built against OpenSSL library, and the en‐
               gine pkcs11 is available,  then  a  PKCS#11  URI  (RFC
               7512)  can be used to specify a private key located in
               a PKCS#11 device. A string  beginning  with  "pkcs11:"
@@ -2157,13 +2151,13 @@
               "pkcs11"  if  none was provided and the --key-type op‐
               tion will be set as "ENG" if none was provided.
 
-              If this option is used several  times,  the  last  one
+              <p>     If this option is used several  times,  the  last  one
               will be used.
 
-              Example:
+              <p>    Example:
                curl --cert certificate --key here https://example.com
 
-              See also --key-type and -E, --cert.
+               <p>   See also --key-type and -E, --cert.
 
               <p> --krb <level>
               (FTP)  Enable  Kerberos  authentication  and  use. The
@@ -2172,10 +2166,10 @@
               level that is not one of these, 'private' will instead
               be used.
 
-              If  this  option  is  used several times, the last one
+              <p>    If  this  option  is  used several times, the last one
               will be used.
 
-              Example:
+              <p>    Example:
                curl --krb clear ftp://example.com/
 
               See also --delegation and --ssl. --krb  requires  that
@@ -2240,22 +2234,22 @@
               this, the option causes an NLST command to be sent  to
               the server instead of LIST.
 
-              Note:  Some  FTP  servers list only files in their re‐
+              <p>   Note:  Some  FTP  servers list only files in their re‐
               sponse to NLST; they do  not  include  sub-directories
               and symbolic links.
 
-              (POP3)  When  retrieving  a  specific email from POP3,
+              <p>   (POP3)  When  retrieving  a  specific email from POP3,
               this switch forces a LIST command to be performed  in‐
               stead of RETR. This is particularly useful if the user
               wants to see if a specific message-id  exists  on  the
               server and what size it is.
 
-              Note:  When  combined  with -X, --request, this option
+              <p>    Note:  When  combined  with -X, --request, this option
               can be used to send a UIDL  command  instead,  so  the
               user may use the email's unique identifier rather than
               its message-id to make the request.
 
-              Example:
+              <p>   Example:
                curl --list-only ftp://example.com/dir/
 
               See also -Q, --quote and -X, --request.
@@ -2268,7 +2262,7 @@
               thing too narrow might  cause  unnecessary  connection
               setup failures.
 
-              Example:
+              <p>   Example:
                curl --local-port 1000-3000 https://example.com
 
               See also -g, --globoff.
@@ -2709,7 +2703,7 @@
               overrides  --basic  and  --negotiate  and --digest and
               --anyauth.
 
-       --oauth2-bearer <token>
+              <p>    --oauth2-bearer <token>
               (IMAP POP3 SMTP HTTP) Specify  the  Bearer  Token  for
               OAUTH  2.0  server authentication. The Bearer Token is
               used in conjunction with the user name  which  can  be
@@ -2727,7 +2721,7 @@
               See  also  --basic,  --ntlm  and  --digest.  Added  in
               7.33.0.
 
-       --output-dir <dir>
+              <p>   --output-dir <dir>
 
               This option specifies the  directory  in  which  files
               should be stored, when -O, --remote-name or -o, --out‐
@@ -3323,7 +3317,7 @@
               If this option is used several  times,  the  last  one
               will be used.
 
-              Example:
+              <p>     Example:
                curl --proxy-tls13-ciphers TLS_AES_128_GCM_SHA256 -x proxy https://example.com
 
               See   also  --tls13-ciphers  and  --curves.  Added  in
@@ -3338,7 +3332,7 @@
               See also -x, --proxy  and  --proxy-tlsuser.  Added  in
               7.52.0.
 
-       --proxy-tlspassword <string>
+              <p>    --proxy-tlspassword <string>
               Same as --tlspassword but used in HTTPS proxy context.
 
               Example:
@@ -3347,7 +3341,7 @@
               See  also  -x,  --proxy  and --proxy-tlsuser. Added in
               7.52.0.
 
-       --proxy-tlsuser <name>
+              <p>   --proxy-tlsuser <name>
               Same as --tlsuser but used in HTTPS proxy context.
 
               Example:
@@ -3356,7 +3350,7 @@
               See also -x, --proxy and --proxy-tlspassword. Added in
               7.52.0.
 
-       --proxy-tlsv1
+              <p>  --proxy-tlsv1
               Same as -1, --tlsv1 but used in HTTPS proxy context.
 
               Example:
@@ -3559,19 +3553,19 @@
                      strings,  see  the curl_getdate(3) man page for
                      date expression details. (Added in 7.73.0)
 
-              pwd    The pwd command returns the  absolute  pathname
+                     <p>    pwd    The pwd command returns the  absolute  pathname
                      of the current working directory.
 
-              rename source target
+                     <p>   rename source target
                      The  rename  command renames the file or direc‐
                      tory named by the source operand to the  desti‐
                      nation path named by the target operand.
 
-              rm file
+                     <p>  rm file
                      The  rm  command  removes the file specified by
                      the file operand.
 
-              rmdir directory
+                     <p>    rmdir directory
                      The rmdir command removes the  directory  entry
                      specified by the directory operand, provided it
                      is empty.
@@ -3579,7 +3573,7 @@
               symlink source_file target_file
                      See ln.
 
-       Example:
+                     <p>  Example:
         curl --quote "DELE file" ftp://example.com/foo
 
        See also -X, --request.
@@ -3805,13 +3799,13 @@
               If  this  option  is  used several times, the last one
               will be used.
 
-              Examples:
+              <p>     Examples:
                curl -X "DELETE" https://example.com
                curl -X NLST ftp://example.com/
 
               See also --request-target.
 
-       --resolve <[+]host:port:addr[,addr]...>
+              <p>    --resolve <[+]host:port:addr[,addr]...>
               Provide a custom address for a specific host and  port
               pair.  Using  this,  you can make the curl requests(s)
               use a specified address and prevent the otherwise nor‐
@@ -3982,12 +3976,12 @@
               to access another user's inbox, that the user has been
               granted access to, or a shared mailbox for example.
 
-              Example:
+              <p>     Example:
                curl --sasl-authzid zid imap://example.com/
 
               See also --login-options. Added in 7.66.0.
 
-       --sasl-ir
+              <p>  --sasl-ir
               Enable initial response in SASL authentication.
 
               Example:
@@ -3995,7 +3989,7 @@
 
               See also --sasl-authzid. Added in 7.31.0.
 
-       --service-name <name>
+              <p>  --service-name <name>
               This option allows you to change the service name  for
               SPNEGO.
 
@@ -4293,19 +4287,19 @@
               ing/offline distribution  points  for  the  revocation
               check lists.
 
-              Example:
+              <p>    Example:
                curl --ssl-revoke-best-effort https://example.com
 
               See  also  --crlfile  and  -k,  --insecure.  Added  in
               7.70.0.
 
-       --ssl  (FTP IMAP POP3 SMTP LDAP) Try to use SSL/TLS  for  the
+              <p>  --ssl  (FTP IMAP POP3 SMTP LDAP) Try to use SSL/TLS  for  the
               connection.  Reverts to a non-secure connection if the
               server does not support SSL/TLS. See  also  --ftp-ssl-
               control and --ssl-reqd for different levels of encryp‐
               tion required.
 
-              This option is handled in LDAP since  version  7.81.0.
+              <p>    This option is handled in LDAP since  version  7.81.0.
               It  is fully supported by the openldap backend and ig‐
               nored by the generic ldap backend.
 
@@ -4316,12 +4310,12 @@
               tion name can still be used but will be removed  in  a
               future version.
 
-              Example:
+              <p>     Example:
                curl --ssl pop3://example.com/
 
               See also -k, --insecure and --ciphers.
 
-       -2, --sslv2
+              <p>  -2, --sslv2
               (SSL)  This option previously asked curl to use SSLv2,
               but starting in curl 7.77.0 this  instruction  is  ig‐
               nored.  SSLv2  is  widely considered insecure (see RFC
@@ -4335,7 +4329,7 @@
               This option overrides -3, --sslv3 and -1, --tlsv1  and
               --tlsv1.1 and --tlsv1.2.
 
-       -3, --sslv3
+              <p>   -3, --sslv3
               (SSL)  This option previously asked curl to use SSLv3,
               but starting in curl 7.77.0 this  instruction  is  ig‐
               nored.  SSLv3  is  widely considered insecure (see RFC
@@ -4360,12 +4354,12 @@
               If this option is used several  times,  the  last  one
               will be used.
 
-              Example:
+              <p>  Example:
                curl --stderr output.txt https://example.com
 
               See also -v, --verbose and -s, --silent.
 
-       --styled-output
+              <p>     --styled-output
               Enables  the  automatic  use  of bold font styles when
               writing HTTP headers to the terminal. Use --no-styled-
               output to switch them off.
@@ -4373,13 +4367,13 @@
               This  option  is global and does not need to be speci‐
               fied for each use of -:, --next.
 
-              Example:
+              <p>      Example:
                curl --styled-output -I https://example.com
 
               See also  -I,  --head  and  -v,  --verbose.  Added  in
               7.61.0.
 
-       --suppress-connect-headers
+              <p>     --suppress-connect-headers
               When  -p,  --proxytunnel is used and a CONNECT request
               is made do not output proxy CONNECT response  headers.
               This option is meant to be used with -D, --dump-header
@@ -4401,7 +4395,7 @@
 
               See also --false-start. Added in 7.49.0.
 
-       --tcp-nodelay
+              <p>   --tcp-nodelay
               Turn  on the TCP_NODELAY option. See the curl_easy_se‐
               topt(3) man page for details about this option.
 
